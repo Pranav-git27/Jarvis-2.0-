@@ -1,0 +1,187 @@
+.scifi-overlay-container {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: var(--z-overlay);
+  overflow: hidden;
+}
+
+/* Sci-fi Background Grid */
+.cyber-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(212, 113, 43, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 113, 43, 0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-position: center center;
+  opacity: 0.6;
+}
+
+/* Ambient Radial Glow */
+.radial-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, var(--theme-amber-glow) 0%, rgba(3, 5, 8, 0) 65%);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: all 0.6s ease;
+  opacity: 0.5;
+}
+
+/* ===== Animated Corner Brackets ===== */
+.hud-corner {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-color: rgba(212, 113, 43, 0.25);
+  border-style: solid;
+  pointer-events: none;
+  transition: border-color 0.4s ease;
+  overflow: hidden;
+}
+
+.corner-scan {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--theme-amber), transparent);
+  opacity: 0;
+  animation: cornerScan 3s ease-in-out infinite;
+}
+
+@keyframes cornerScan {
+  0%, 70%, 100% { opacity: 0; }
+  10% { opacity: 0.6; }
+  35% { opacity: 0.6; }
+}
+
+.hud-corner-tl {
+  top: 20px;
+  left: 20px;
+  border-width: 1px 0 0 1px;
+}
+
+.hud-corner-tl .corner-scan {
+  top: 0;
+  left: 0;
+  animation-delay: 0s;
+}
+
+.hud-corner-tr {
+  top: 20px;
+  right: 20px;
+  border-width: 1px 1px 0 0;
+}
+
+.hud-corner-tr .corner-scan {
+  top: 0;
+  right: 0;
+  transform: rotate(180deg);
+  animation-delay: 0.8s;
+}
+
+.hud-corner-bl {
+  bottom: 20px;
+  left: 20px;
+  border-width: 0 0 1px 1px;
+}
+
+.hud-corner-bl .corner-scan {
+  bottom: 0;
+  left: 0;
+  animation-delay: 1.6s;
+}
+
+.hud-corner-br {
+  bottom: 20px;
+  right: 20px;
+  border-width: 0 1px 1px 0;
+}
+
+.hud-corner-br .corner-scan {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+  animation-delay: 2.4s;
+}
+
+/* ===== Side Scan Lines ===== */
+.side-scan {
+  position: absolute;
+  width: 1px;
+  height: 80px;
+  opacity: 0;
+}
+
+.side-scan-left {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(180deg, transparent, var(--theme-amber), transparent);
+  animation: sideScanV 5s ease-in-out infinite;
+}
+
+.side-scan-right {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(180deg, transparent, var(--theme-amber), transparent);
+  animation: sideScanV 5s ease-in-out infinite 2.5s;
+}
+
+@keyframes sideScanV {
+  0%, 100% { opacity: 0; height: 40px; }
+  15% { opacity: 0.4; height: 120px; }
+  30% { opacity: 0; height: 40px; }
+}
+
+/* ===== Audio Spectrum Equalizer ===== */
+.audio-spectrum-bar {
+  position: absolute;
+  bottom: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 28px;
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.spectrum-pillar {
+  width: 2.5px;
+  background: linear-gradient(180deg, var(--theme-amber), rgba(212, 113, 43, 0.3));
+  border-radius: 2px;
+  box-shadow: 0 0 6px rgba(212, 113, 43, 0.4);
+  animation: spectrumPulse 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes spectrumPulse {
+  0% {
+    height: 3px;
+    opacity: 0.3;
+  }
+  100% {
+    height: 24px;
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 768px) {
+  .hud-corner {
+    width: 24px;
+    height: 24px;
+  }
+  .cyber-grid {
+    background-size: 36px 36px;
+  }
+  .side-scan {
+    display: none;
+  }
+}

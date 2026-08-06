@@ -1,0 +1,124 @@
+.state-selector {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 4px;
+  padding: 5px;
+  background: var(--glass-bg-deep);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  backdrop-filter: var(--glass-blur-heavy);
+  box-shadow: var(--shadow-lg);
+  z-index: var(--z-hud);
+  pointer-events: auto;
+}
+
+.state-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.state-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(212, 113, 43, 0.12), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.state-button:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.state-button:hover::before {
+  opacity: 1;
+}
+
+.state-button.active {
+  background: rgba(212, 113, 43, 0.12);
+  border-color: rgba(212, 113, 43, 0.35);
+}
+
+.state-button:active {
+  transform: scale(0.95);
+}
+
+.state-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s var(--ease-smooth);
+  position: relative;
+  z-index: 1;
+}
+
+.state-button.active .state-icon-wrapper {
+  color: var(--theme-amber);
+  filter: drop-shadow(0 0 6px rgba(212, 113, 43, 0.4));
+}
+
+.state-label {
+  font-family: var(--font-tech);
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.state-button.active .state-label {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Active bar indicator */
+.state-active-bar {
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 2px;
+  background: var(--theme-amber);
+  border-radius: 1px;
+  box-shadow: 0 0 8px rgba(212, 113, 43, 0.5);
+  animation: fadeInUp 0.3s var(--ease-smooth) forwards;
+}
+
+@media (max-width: 768px) {
+  .state-selector {
+    bottom: 16px;
+    gap: 2px;
+    padding: 4px;
+    border-radius: 14px;
+    max-width: 95vw;
+    overflow-x: auto;
+  }
+
+  .state-button {
+    padding: 6px 10px;
+    border-radius: 10px;
+    gap: 4px;
+  }
+
+  .state-label {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+}

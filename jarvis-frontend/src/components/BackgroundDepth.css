@@ -1,0 +1,128 @@
+.bg-depth {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: var(--z-bg);
+  overflow: hidden;
+}
+
+/* ===== Star Field ===== */
+.star-field {
+  position: absolute;
+  inset: 0;
+}
+
+.star {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  animation: breathe var(--duration, 3s) ease-in-out infinite;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+/* ===== Floating Dust ===== */
+.floating-dust {
+  position: absolute;
+  inset: 0;
+}
+
+.dust-particle {
+  position: absolute;
+  background: radial-gradient(circle, rgba(212, 113, 43, 0.3) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: dustFloat var(--duration, 10s) ease-in-out infinite;
+  filter: blur(0.5px);
+}
+
+@keyframes dustFloat {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.2;
+  }
+  25% {
+    transform: translate(15px, -20px) scale(1.1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translate(-10px, -35px) scale(0.9);
+    opacity: 0.3;
+  }
+  75% {
+    transform: translate(20px, -15px) scale(1.15);
+    opacity: 0.45;
+  }
+}
+
+/* ===== Ambient Fog ===== */
+.ambient-fog {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.12;
+}
+
+.fog-1 {
+  top: 20%;
+  left: 30%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--theme-amber) 0%, transparent 70%);
+  animation: fogDrift1 20s ease-in-out infinite;
+}
+
+.fog-2 {
+  bottom: 15%;
+  right: 25%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--theme-amber) 0%, transparent 70%);
+  animation: fogDrift2 25s ease-in-out infinite;
+  opacity: 0.08;
+}
+
+@keyframes fogDrift1 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(40px, -30px); }
+  66% { transform: translate(-20px, 20px); }
+}
+
+@keyframes fogDrift2 {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(-30px, 25px); }
+  66% { transform: translate(25px, -15px); }
+}
+
+/* ===== Scan Line ===== */
+.scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(212, 113, 43, 0.15) 20%,
+    rgba(212, 113, 43, 0.3) 50%,
+    rgba(212, 113, 43, 0.15) 80%,
+    transparent 100%
+  );
+  animation: scanline 8s linear infinite;
+  opacity: 0.5;
+}
+
+/* ===== Ambient Orange Glow ===== */
+.ambient-orange-glow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 300px;
+  background: radial-gradient(
+    ellipse at center bottom,
+    rgba(212, 113, 43, 0.06) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}

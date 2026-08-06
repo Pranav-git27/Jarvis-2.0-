@@ -1,0 +1,111 @@
+.workflow-indicator {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  z-index: var(--z-hud);
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeInUp 0.4s var(--ease-smooth) forwards;
+}
+
+.workflow-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.step-node {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s var(--ease-smooth);
+}
+
+.workflow-step.completed .step-dot {
+  background: var(--theme-amber);
+  border-color: var(--theme-amber);
+  box-shadow: 0 0 6px rgba(212, 113, 43, 0.4);
+}
+
+.workflow-step.current .step-dot {
+  background: var(--theme-amber);
+  border-color: var(--theme-amber);
+  box-shadow: 0 0 10px rgba(212, 113, 43, 0.5);
+  width: 8px;
+  height: 8px;
+}
+
+.step-pulse {
+  position: absolute;
+  inset: -4px;
+  border: 1px solid var(--theme-amber);
+  border-radius: 50%;
+  animation: stepPulse 1.5s ease-out infinite;
+}
+
+@keyframes stepPulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.step-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.workflow-step.completed .step-label {
+  color: rgba(212, 113, 43, 0.6);
+}
+
+.workflow-step.current .step-label {
+  color: var(--theme-amber);
+  font-weight: 600;
+}
+
+.step-connector {
+  position: absolute;
+  left: 2.5px;
+  top: 14px;
+  width: 1px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: background 0.4s ease;
+}
+
+.step-connector.filled {
+  background: var(--theme-amber);
+  box-shadow: 0 0 4px rgba(212, 113, 43, 0.3);
+}
+
+@media (max-width: 900px) {
+  .workflow-indicator {
+    display: none;
+  }
+}

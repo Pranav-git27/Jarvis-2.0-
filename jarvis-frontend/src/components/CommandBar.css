@@ -1,0 +1,270 @@
+.command-deck {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 640px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: var(--z-command);
+  pointer-events: auto;
+}
+
+/* Quick Action Chips */
+.action-chips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.chip-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  font-family: var(--font-tech);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  backdrop-filter: var(--glass-blur);
+  transition: all 0.3s var(--ease-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.chip-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(212, 113, 43, 0.15), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.chip-btn:hover {
+  background: rgba(212, 113, 43, 0.08);
+  border-color: rgba(212, 113, 43, 0.25);
+  color: var(--theme-amber);
+  transform: translateY(-1px);
+}
+
+.chip-btn:hover::before {
+  opacity: 1;
+}
+
+.chip-btn:active {
+  transform: translateY(0) scale(0.97);
+}
+
+/* Command Input Form Bar */
+.command-bar-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: var(--glass-bg-deep);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 6px 8px 6px 14px;
+  backdrop-filter: var(--glass-blur-heavy);
+  box-shadow: var(--shadow-lg);
+  transition: all 0.35s var(--ease-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated glow border on focus */
+.command-bar-glow {
+  position: absolute;
+  inset: -1px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, var(--theme-amber), transparent 40%, transparent 60%, var(--theme-amber));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.command-bar-form.focused {
+  border-color: rgba(212, 113, 43, 0.4);
+}
+
+.command-bar-form.focused .command-bar-glow {
+  opacity: 0.15;
+}
+
+.command-bar-form:not(.focused):hover {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.command-icon {
+  color: rgba(212, 113, 43, 0.5);
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Listening indicator */
+.listening-indicator {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.listening-pulse {
+  position: absolute;
+  inset: -4px;
+  border: 1px solid var(--theme-emerald);
+  border-radius: 50%;
+  animation: listeningPulse 1.5s ease-out infinite;
+}
+
+@keyframes listeningPulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.command-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  color: #ffffff;
+  caret-color: var(--theme-amber);
+}
+
+.command-input::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+  font-family: var(--font-tech);
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+.command-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Voice Mic Button */
+.mic-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: all 0.3s var(--ease-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.mic-btn:hover {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: var(--theme-emerald);
+}
+
+.mic-btn.listening {
+  background: rgba(16, 185, 129, 0.2);
+  border-color: var(--theme-emerald);
+  color: var(--theme-emerald);
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.3);
+}
+
+.mic-btn:active {
+  transform: scale(0.9);
+}
+
+.mic-ring {
+  position: absolute;
+  inset: -2px;
+  border: 2px solid var(--theme-emerald);
+  border-radius: 11px;
+  animation: micRingPulse 1.2s ease-out infinite;
+}
+
+@keyframes micRingPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+/* Send Button */
+.send-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(212, 113, 43, 0.15);
+  border: 1px solid rgba(212, 113, 43, 0.3);
+  border-radius: 10px;
+  color: var(--theme-amber);
+  cursor: pointer;
+  transition: all 0.3s var(--ease-smooth);
+}
+
+.send-btn.active {
+  background: var(--theme-amber);
+  border-color: var(--theme-amber);
+  color: #000000;
+}
+
+.send-btn.active:hover {
+  background: #E8833A;
+  box-shadow: 0 0 20px rgba(212, 113, 43, 0.4);
+  transform: scale(1.05);
+}
+
+.send-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.send-btn:not(:disabled):active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+  .command-deck {
+    bottom: 80px;
+    max-width: 94%;
+  }
+  .action-chips {
+    display: none;
+  }
+  .command-input {
+    font-size: 13px;
+  }
+}
