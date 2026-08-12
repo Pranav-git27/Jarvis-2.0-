@@ -12,7 +12,7 @@ from app.config import settings
 class GeminiService(AIProvider):
     """Generate text with Google's Gemini API through the modern GenAI SDK."""
 
-    DEFAULT_MODEL = "gemini-2.5-flash-lite"
+    DEFAULT_MODEL = "gemini-flash-lite-latest"
 
     def __init__(self, model: str = DEFAULT_MODEL) -> None:
         """Create a Gemini client using the backend-configured API key."""
