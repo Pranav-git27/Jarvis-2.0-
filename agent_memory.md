@@ -40,15 +40,18 @@ D:\JARVIS 2.0\
 │   │   │   ├── WorkflowIndicator.tsx  # Animated workflow progress
 │   │   │   ├── ActivityPanel.tsx     # Live activity status display
 │   │   │   └── StateSelector.tsx     # Bottom nav with premium interactions
+│   │   ├── services/
+│   │   │   ├── api.ts            # Frontend API client for /api/chat & /api/chat/stream
+│   │   │   └── api.validation.ts # Independent validation suite for API client
 │   │   ├── App.tsx               # Integrated state & message management
 │   │   ├── App.css
 │   │   ├── index.css             # Design tokens, animations, glassmorphism
 │   │   └── main.tsx
+│   ├── .env.example              # Frontend environment template (VITE_API_BASE_URL)
 │   ├── index.html                # Google Fonts links (incl. JetBrains Mono)
 │   └── package.json
 │
-└── jarvis-backend/           # Python FastAPI (NOT STARTED)
-    └── (planned)
+└── jarvis-backend/           # Python FastAPI Backend (Gemini API & SSE Streaming operational)
 ```
 
 ---
@@ -117,6 +120,14 @@ D:\JARVIS 2.0\
 - **6 States**: Idle, Listen, Think, Speak, Search, Done
 - **Premium Interactions**: Hover glow, active bar indicator, scale on press
 - **Glassmorphic**: Deep glass background with heavy blur
+
+### 10. Frontend API Client (`src/services/api.ts` & `src/services/api.validation.ts`) — Completed Chunk 7
+- **Base URL Resolution**: Configured via `VITE_API_BASE_URL` with development default `http://localhost:8000`.
+- **Non-Streaming**: `sendChatMessage(request)` posts to `POST /api/chat`, handles JSON errors and returns `ChatResponse`.
+- **Streaming**: `sendChatStream(request)` posts to `POST /api/chat/stream`, returns AsyncGenerator yielding tokens.
+- **SSE Buffering**: Robust line & boundary handling for split network reads across `\n\n` delimiters.
+- **Callback Wrapper**: `streamChatMessage(request, onChunk)` for callback-based stream consumption.
+- **Security & Scope**: No Gemini SDK imported; zero API keys in frontend; no direct Gemini API calls.
 
 ---
 

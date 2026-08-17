@@ -62,11 +62,11 @@ This plan outlines the architecture and step-by-step roadmap to complete all rem
 #### [NEW] Backend — `d:\JARVIS 2.0\jarvis-backend\requirements.txt`
 - Add: `fastapi`, `uvicorn`, `google-genai`, `pydantic`, `python-dotenv`.
 
-#### [NEW] Frontend — API Client (`d:\JARVIS 2.0\jarvis-frontend\src\services\api.ts`)
+#### [NEW] [COMPLETED CHUNK 7] Frontend — API Client (`d:\JARVIS 2.0\jarvis-frontend\src\services\api.ts` & `src/services/api.validation.ts`)
 - Talks only to FastAPI (base URL via `VITE_API_BASE_URL`, default `http://localhost:8000`). No API key, no AI SDK in the frontend.
-- `createMessage(messages)` → `POST /api/chat`.
-- `streamMessage(messages, onChunk)` → `POST /api/chat/stream`, parse the event stream and forward tokens to `onChunk`.
-- `buildHistory(messages: ChatMessage[])` — map UI messages (user/jarvis) to the backend request format.
+- `sendChatMessage(request)` → `POST /api/chat`.
+- `sendChatStream(request)` → `POST /api/chat/stream`, parse SSE event stream with AsyncGenerator.
+- `streamChatMessage(request, onChunk)` → callback wrapper forwarding tokens to `onChunk`.
 
 #### [MODIFY] Frontend — `d:\JARVIS 2.0\jarvis-frontend\src\App.tsx`
 - Wire `handleSendMessage` to `api.ts`; delete the mock `setTimeout` response block and the stale-`orbState` branches.
