@@ -1,0 +1,137 @@
+{
+  "jarvis-backend/app/__init__.py": {
+    "mtime": 1786035014.7050724,
+    "ast_hash": "0f24cffbd1c0be4dd2888bd51f80c482",
+    "semantic_hash": "0f24cffbd1c0be4dd2888bd51f80c482"
+  },
+  "jarvis-backend/app/ai/__init__.py": {
+    "mtime": 1786035022.516615,
+    "ast_hash": "c5ee410752ecbc78c31c10b24152f0cc",
+    "semantic_hash": "c5ee410752ecbc78c31c10b24152f0cc"
+  },
+  "jarvis-backend/app/ai/gemini_service.py": {
+    "mtime": 1786553976.2274237,
+    "ast_hash": "683dc791e0175e86b05333fb51a0cb46",
+    "semantic_hash": "683dc791e0175e86b05333fb51a0cb46"
+  },
+  "jarvis-backend/app/ai/provider.py": {
+    "mtime": 1786200210.3169794,
+    "ast_hash": "c6d3f0ac92f6eb1036ffc010af80c592",
+    "semantic_hash": "c6d3f0ac92f6eb1036ffc010af80c592"
+  },
+  "jarvis-backend/app/api/__init__.py": {
+    "mtime": 1786035019.320159,
+    "ast_hash": "e3c6b6302f76289e8a5693694c4a83ea",
+    "semantic_hash": "e3c6b6302f76289e8a5693694c4a83ea"
+  },
+  "jarvis-backend/app/api/chat.py": {
+    "mtime": 1786897433.4849265,
+    "ast_hash": "6affa0afa13f70701f20160c1c07f958",
+    "semantic_hash": "6affa0afa13f70701f20160c1c07f958"
+  },
+  "jarvis-backend/app/api/dependencies.py": {
+    "mtime": 1786202770.9401467,
+    "ast_hash": "9b33976740654cbc1d7babb4cec238e9",
+    "semantic_hash": "9b33976740654cbc1d7babb4cec238e9"
+  },
+  "jarvis-backend/app/config.py": {
+    "mtime": 1786035038.6463792,
+    "ast_hash": "cc978bbc3c7122a0ccf5a330fe775bf1",
+    "semantic_hash": "cc978bbc3c7122a0ccf5a330fe775bf1"
+  },
+  "jarvis-backend/app/main.py": {
+    "mtime": 1786202802.7913892,
+    "ast_hash": "36421c8a68192c0cc3fb99b615dcad19",
+    "semantic_hash": "36421c8a68192c0cc3fb99b615dcad19"
+  },
+  "jarvis-backend/app/models/__init__.py": {
+    "mtime": 1786035030.7165964,
+    "ast_hash": "692fc1b40d3dae0d8ef52f0adcad2277",
+    "semantic_hash": "692fc1b40d3dae0d8ef52f0adcad2277"
+  },
+  "jarvis-backend/app/models/chat_models.py": {
+    "mtime": 1786201869.656782,
+    "ast_hash": "f13a7e76980136cd3e6314a781c53cdf",
+    "semantic_hash": "f13a7e76980136cd3e6314a781c53cdf"
+  },
+  "jarvis-backend/app/services/__init__.py": {
+    "mtime": 1786035026.7465725,
+    "ast_hash": "ab496482234f012356b06882739aae95",
+    "semantic_hash": "ab496482234f012356b06882739aae95"
+  },
+  "jarvis-backend/app/utils/__init__.py": {
+    "mtime": 1786035034.1176853,
+    "ast_hash": "51f69d653cffd69620f3024dbe7be56f",
+    "semantic_hash": "51f69d653cffd69620f3024dbe7be56f"
+  },
+  "jarvis-frontend/src/App.tsx": {
+    "mtime": 1785911527.8219566,
+    "ast_hash": "2b8740b0cbba0ba984486885bf221fce",
+    "semantic_hash": "2b8740b0cbba0ba984486885bf221fce"
+  },
+  "jarvis-frontend/src/components/ActivityPanel.tsx": {
+    "mtime": 1785911431.180479,
+    "ast_hash": "2bd02b333f66918dd1c438ecf72d042e",
+    "semantic_hash": "2bd02b333f66918dd1c438ecf72d042e"
+  },
+  "jarvis-frontend/src/components/BackgroundDepth.tsx": {
+    "mtime": 1785911191.6571953,
+    "ast_hash": "d3dcb4a5416ca4646224235416c65dfb",
+    "semantic_hash": "d3dcb4a5416ca4646224235416c65dfb"
+  },
+  "jarvis-frontend/src/components/ChatDrawer.tsx": {
+    "mtime": 1785911458.2212303,
+    "ast_hash": "0d6b3655c74b9220334856bd8f1a5fbe",
+    "semantic_hash": "0d6b3655c74b9220334856bd8f1a5fbe"
+  },
+  "jarvis-frontend/src/components/CommandBar.tsx": {
+    "mtime": 1785911551.6777625,
+    "ast_hash": "f71a71fc1bf619b698075d45a1d75f73",
+    "semantic_hash": "f71a71fc1bf619b698075d45a1d75f73"
+  },
+  "jarvis-frontend/src/components/HUDHeader.tsx": {
+    "mtime": 1785911286.8355134,
+    "ast_hash": "461064aba1d89c64ff25848a26920e40",
+    "semantic_hash": "461064aba1d89c64ff25848a26920e40"
+  },
+  "jarvis-frontend/src/components/ParticleBlob.tsx": {
+    "mtime": 1785911580.3022542,
+    "ast_hash": "2e9b2d96ac6cb6579b40f3e3efc405a1",
+    "semantic_hash": "2e9b2d96ac6cb6579b40f3e3efc405a1"
+  },
+  "jarvis-frontend/src/components/SciFiOverlay.tsx": {
+    "mtime": 1785911325.8880446,
+    "ast_hash": "1041a88d25bfa716af06ed3c2d9de4ca",
+    "semantic_hash": "1041a88d25bfa716af06ed3c2d9de4ca"
+  },
+  "jarvis-frontend/src/components/StateSelector.tsx": {
+    "mtime": 1785911498.2388246,
+    "ast_hash": "fb0075d0ed435fb317b0cb2a12c9c7ea",
+    "semantic_hash": "fb0075d0ed435fb317b0cb2a12c9c7ea"
+  },
+  "jarvis-frontend/src/components/WorkflowIndicator.tsx": {
+    "mtime": 1785911407.396418,
+    "ast_hash": "8faccbc04cf8a4491f154fb37bbdc245",
+    "semantic_hash": "8faccbc04cf8a4491f154fb37bbdc245"
+  },
+  "jarvis-frontend/src/main.tsx": {
+    "mtime": 1785822577.5050423,
+    "ast_hash": "bcf17aa85a634b63d152036a69039299",
+    "semantic_hash": "bcf17aa85a634b63d152036a69039299"
+  },
+  "jarvis-frontend/src/services/api.ts": {
+    "mtime": 1786977935.7300549,
+    "ast_hash": "973cb0a03e476f03d12c6f7dac19b21d",
+    "semantic_hash": "973cb0a03e476f03d12c6f7dac19b21d"
+  },
+  "jarvis-frontend/src/services/api.validation.ts": {
+    "mtime": 1786977978.3608205,
+    "ast_hash": "c2e4625badd6f9975b2c83c86e5c696e",
+    "semantic_hash": "c2e4625badd6f9975b2c83c86e5c696e"
+  },
+  "jarvis-frontend/vite.config.ts": {
+    "mtime": 1785822502.0150995,
+    "ast_hash": "88439104b3c207f17d33ef3160e3b080",
+    "semantic_hash": "88439104b3c207f17d33ef3160e3b080"
+  }
+}

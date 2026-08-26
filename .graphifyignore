@@ -1,0 +1,52 @@
+# Directories
+dist/
+dist
+**/dist/**
+public/
+public
+**/public/**
+__pycache__/
+__pycache__
+**/__pycache__/**
+node_modules/
+node_modules
+**/node_modules/**
+.venv/
+.venv
+**/..venv/**
+
+# Media & Images
+*.svg
+**/*.svg
+*.ico
+**/*.ico
+*.png
+**/*.png
+*.jpg
+**/*.jpg
+*.jpeg
+**/*.jpeg
+
+# Docs & Text
+*.md
+**/*.md
+*.txt
+**/*.txt
+*.rst
+**/*.rst
+*.pdf
+**/*.pdf
+*.html
+**/*.html
+
+# Configs & Locks
+*.json
+**/*.json
+*.lock
+**/*.lock
+.env*
+**/.env*
+.git*
+**/.git*
+.oxlint*
+**/.oxlint*

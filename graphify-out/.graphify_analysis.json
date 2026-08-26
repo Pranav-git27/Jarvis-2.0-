@@ -1,0 +1,305 @@
+{
+  "communities": {
+    "0": [
+      "jarvis_frontend_src_app",
+      "jarvis_frontend_src_app_app",
+      "jarvis_frontend_src_components_activitypanel",
+      "jarvis_frontend_src_components_activitypanel_activityitem",
+      "jarvis_frontend_src_components_activitypanel_activitypanel",
+      "jarvis_frontend_src_components_activitypanel_activitypanelprops",
+      "jarvis_frontend_src_components_activitypanel_state_activities",
+      "jarvis_frontend_src_components_commandbar",
+      "jarvis_frontend_src_components_commandbar_action_chips",
+      "jarvis_frontend_src_components_commandbar_commandbar",
+      "jarvis_frontend_src_components_commandbar_commandbarprops",
+      "jarvis_frontend_src_components_hudheader",
+      "jarvis_frontend_src_components_hudheader_hudheader",
+      "jarvis_frontend_src_components_hudheader_hudheaderprops",
+      "jarvis_frontend_src_components_hudheader_state_colors",
+      "jarvis_frontend_src_components_hudheader_state_labels",
+      "jarvis_frontend_src_components_particleblob",
+      "jarvis_frontend_src_components_particleblob_fibonaccisphere",
+      "jarvis_frontend_src_components_particleblob_orbstate",
+      "jarvis_frontend_src_components_particleblob_particleblob",
+      "jarvis_frontend_src_components_particleblob_particleblobprops",
+      "jarvis_frontend_src_components_particleblob_particles",
+      "jarvis_frontend_src_components_particleblob_particlesprops",
+      "jarvis_frontend_src_components_particleblob_state_config",
+      "jarvis_frontend_src_components_scifioverlay",
+      "jarvis_frontend_src_components_scifioverlay_scifioverlay",
+      "jarvis_frontend_src_components_scifioverlay_scifioverlayprops",
+      "jarvis_frontend_src_components_stateselector",
+      "jarvis_frontend_src_components_stateselector_states",
+      "jarvis_frontend_src_components_stateselector_stateselector",
+      "jarvis_frontend_src_components_stateselector_stateselectorprops",
+      "jarvis_frontend_src_main"
+    ],
+    "1": [
+      "jarvis_frontend_src_services_api",
+      "jarvis_frontend_src_services_api_apiclientoptions",
+      "jarvis_frontend_src_services_api_apierror",
+      "jarvis_frontend_src_services_api_apierror_constructor",
+      "jarvis_frontend_src_services_api_buildendpointurl",
+      "jarvis_frontend_src_services_api_chatrequest",
+      "jarvis_frontend_src_services_api_chatresponse",
+      "jarvis_frontend_src_services_api_getapibaseurl",
+      "jarvis_frontend_src_services_api_parsesseeventblock",
+      "jarvis_frontend_src_services_api_sendchatmessage",
+      "jarvis_frontend_src_services_api_streamchatmessage",
+      "jarvis_frontend_src_services_api_validation",
+      "jarvis_frontend_src_services_api_validation_assert",
+      "jarvis_frontend_src_services_api_validation_runapivalidations"
+    ],
+    "2": [
+      "abc",
+      "jarvis_backend_app_ai_provider",
+      "jarvis_backend_app_ai_provider_aiprovider",
+      "jarvis_backend_app_ai_provider_aiprovider_generate_response",
+      "jarvis_backend_app_ai_provider_aiprovider_stream_response",
+      "jarvis_backend_app_ai_provider_rationale_1",
+      "jarvis_backend_app_ai_provider_rationale_12",
+      "jarvis_backend_app_ai_provider_rationale_16",
+      "jarvis_backend_app_ai_provider_rationale_8",
+      "jarvis_backend_app_api_dependencies",
+      "jarvis_backend_app_api_dependencies_get_ai_provider",
+      "jarvis_backend_app_api_dependencies_rationale_1",
+      "jarvis_backend_app_api_dependencies_rationale_11"
+    ],
+    "3": [
+      "aiproviderdependency",
+      "chatrequest",
+      "chatresponse",
+      "jarvis_backend_app_api_chat",
+      "jarvis_backend_app_api_chat_create_chat_response",
+      "jarvis_backend_app_api_chat_format_sse_data",
+      "jarvis_backend_app_api_chat_rationale_1",
+      "jarvis_backend_app_api_chat_rationale_25",
+      "jarvis_backend_app_api_chat_rationale_42",
+      "jarvis_backend_app_api_chat_rationale_71",
+      "jarvis_backend_app_api_chat_stream_chat_response",
+      "streamingresponse"
+    ],
+    "4": [
+      "any",
+      "jarvis_backend_app_ai_gemini_service_geminiservice",
+      "jarvis_backend_app_ai_gemini_service_geminiservice_generate_response",
+      "jarvis_backend_app_ai_gemini_service_geminiservice_init",
+      "jarvis_backend_app_ai_gemini_service_geminiservice_response_text",
+      "jarvis_backend_app_ai_gemini_service_geminiservice_stream_response",
+      "jarvis_backend_app_ai_gemini_service_rationale_13",
+      "jarvis_backend_app_ai_gemini_service_rationale_18",
+      "jarvis_backend_app_ai_gemini_service_rationale_23",
+      "jarvis_backend_app_ai_gemini_service_rationale_34",
+      "jarvis_backend_app_ai_gemini_service_rationale_49"
+    ],
+    "5": [
+      "jarvis_backend_app_ai_gemini_service",
+      "jarvis_backend_app_ai_gemini_service_rationale_1",
+      "jarvis_backend_app_config",
+      "jarvis_backend_app_config_rationale_1",
+      "jarvis_backend_app_config_rationale_19",
+      "jarvis_backend_app_config_rationale_26",
+      "jarvis_backend_app_config_settings",
+      "jarvis_backend_app_config_settings_gemini_api_key",
+      "jarvis_backend_app_config_settings_init"
+    ],
+    "6": [
+      "basemodel",
+      "jarvis_backend_app_models_chat_models",
+      "jarvis_backend_app_models_chat_models_chatrequest",
+      "jarvis_backend_app_models_chat_models_chatresponse",
+      "jarvis_backend_app_models_chat_models_rationale_1",
+      "jarvis_backend_app_models_chat_models_rationale_20",
+      "jarvis_backend_app_models_chat_models_rationale_38"
+    ],
+    "7": [
+      "jarvis_backend_app_main",
+      "jarvis_backend_app_main_health_check",
+      "jarvis_backend_app_main_rationale_1",
+      "jarvis_backend_app_main_rationale_29",
+      "jarvis_backend_app_main_rationale_39",
+      "jarvis_backend_app_main_read_root"
+    ],
+    "8": [
+      "jarvis_frontend_src_components_chatdrawer",
+      "jarvis_frontend_src_components_chatdrawer_chatdrawer",
+      "jarvis_frontend_src_components_chatdrawer_chatdrawerprops",
+      "jarvis_frontend_src_components_chatdrawer_chatmessage",
+      "jarvis_frontend_src_components_chatdrawer_messagebubble",
+      "jarvis_frontend_src_components_chatdrawer_rendermessagecontent"
+    ],
+    "9": [
+      "jarvis_frontend_src_components_workflowindicator",
+      "jarvis_frontend_src_components_workflowindicator_getactiveindex",
+      "jarvis_frontend_src_components_workflowindicator_workflow_stages",
+      "jarvis_frontend_src_components_workflowindicator_workflowindicator",
+      "jarvis_frontend_src_components_workflowindicator_workflowindicatorprops"
+    ],
+    "10": [
+      "jarvis_frontend_src_components_backgrounddepth",
+      "jarvis_frontend_src_components_backgrounddepth_backgrounddepth",
+      "jarvis_frontend_src_components_backgrounddepth_floatingdust",
+      "jarvis_frontend_src_components_backgrounddepth_starfield"
+    ],
+    "11": [
+      "jarvis_backend_app_ai_init",
+      "jarvis_backend_app_ai_init_rationale_1"
+    ],
+    "12": [
+      "jarvis_backend_app_api_init",
+      "jarvis_backend_app_api_init_rationale_1"
+    ],
+    "13": [
+      "jarvis_backend_app_init",
+      "jarvis_backend_app_init_rationale_1"
+    ],
+    "14": [
+      "jarvis_backend_app_models_init",
+      "jarvis_backend_app_models_init_rationale_1"
+    ],
+    "15": [
+      "jarvis_backend_app_services_init",
+      "jarvis_backend_app_services_init_rationale_1"
+    ],
+    "16": [
+      "jarvis_backend_app_utils_init",
+      "jarvis_backend_app_utils_init_rationale_1"
+    ],
+    "17": [
+      "jarvis_frontend_vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.1028225806451613,
+    "1": 0.27472527472527475,
+    "2": 0.16666666666666666,
+    "3": 0.19696969696969696,
+    "4": 0.21818181818181817,
+    "5": 0.2222222222222222,
+    "6": 0.3333333333333333,
+    "7": 0.3333333333333333,
+    "8": 0.4,
+    "9": 0.5,
+    "10": 0.5,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0
+  },
+  "gods": [
+    {
+      "id": "jarvis_frontend_src_components_particleblob_orbstate",
+      "label": "OrbState",
+      "degree": 14
+    },
+    {
+      "id": "jarvis_backend_app_ai_gemini_service_geminiservice",
+      "label": "GeminiService",
+      "degree": 8
+    },
+    {
+      "id": "jarvis_backend_app_ai_provider_aiprovider",
+      "label": "AIProvider",
+      "degree": 7
+    },
+    {
+      "id": "jarvis_frontend_src_services_api_validation_runapivalidations",
+      "label": "runApiValidations()",
+      "degree": 6
+    },
+    {
+      "id": "jarvis_backend_app_api_chat_create_chat_response",
+      "label": "create_chat_response()",
+      "degree": 5
+    },
+    {
+      "id": "jarvis_backend_app_api_chat_stream_chat_response",
+      "label": "stream_chat_response()",
+      "degree": 5
+    },
+    {
+      "id": "jarvis_frontend_src_services_api_sendchatmessage",
+      "label": "sendChatMessage()",
+      "degree": 5
+    },
+    {
+      "id": "jarvis_backend_app_api_dependencies_get_ai_provider",
+      "label": "get_ai_provider()",
+      "degree": 4
+    },
+    {
+      "id": "jarvis_backend_app_config_settings",
+      "label": "Settings",
+      "degree": 4
+    },
+    {
+      "id": "jarvis_frontend_src_services_api_getapibaseurl",
+      "label": "getApiBaseUrl()",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "GeminiService",
+      "target": "AIProvider",
+      "source_files": [
+        "jarvis-backend/app/ai/gemini_service.py",
+        "jarvis-backend/app/ai/provider.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "get_ai_provider()",
+      "target": "GeminiService",
+      "source_files": [
+        "jarvis-backend/app/api/dependencies.py",
+        "jarvis-backend/app/ai/gemini_service.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "WorkflowIndicatorProps",
+      "target": "OrbState",
+      "source_files": [
+        "jarvis-frontend/src/components/WorkflowIndicator.tsx",
+        "jarvis-frontend/src/components/ParticleBlob.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities; peripheral node `WorkflowIndicatorProps` unexpectedly reaches hub `OrbState`"
+    },
+    {
+      "source": "ActivityPanelProps",
+      "target": "OrbState",
+      "source_files": [
+        "jarvis-frontend/src/components/ActivityPanel.tsx",
+        "jarvis-frontend/src/components/ParticleBlob.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `ActivityPanelProps` unexpectedly reaches hub `OrbState`"
+    },
+    {
+      "source": "CommandBarProps",
+      "target": "OrbState",
+      "source_files": [
+        "jarvis-frontend/src/components/CommandBar.tsx",
+        "jarvis-frontend/src/components/ParticleBlob.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `CommandBarProps` unexpectedly reaches hub `OrbState`"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
