@@ -9,11 +9,13 @@ import CommandBar from './components/CommandBar';
 import ChatDrawer, { type ChatMessage } from './components/ChatDrawer';
 import WorkflowIndicator from './components/WorkflowIndicator';
 import ActivityPanel from './components/ActivityPanel';
+import { sendChatMessage } from './services/api';
 import './App.css';
 
 function App() {
   const [orbState, setOrbState] = useState<OrbState>('idle');
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       id: 'init-1',
@@ -23,7 +25,9 @@ function App() {
     },
   ]);
 
-  const handleSendMessage = (text: string) => {
+  const handleSendMessage = async (text: string) => {
+    if (isLoading || orbState === 'thinking' || !text.trim()) return;
+
     const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     const userMsg: ChatMessage = {
       id: `user-${Date.now()}`,
@@ -34,45 +38,46 @@ function App() {
 
     setMessages((prev) => [...prev, userMsg]);
     setIsChatOpen(true);
+    setIsLoading(true);
 
-    // Transition through states for realistic feel
+    // Transition through states: thinking while API request is in-flight
     setOrbState('thinking');
 
-    setTimeout(() => {
-      let responseText = `Processing request: "${text}". Analyzing input parameters and generating optimal response.`;
-
-      if (orbState === 'searching') {
-        responseText = `Knowledge base query initiated. Cross-referencing data points for: "${text}". Results synthesized from multiple authoritative sources.`;
-      } else if (orbState === 'listening') {
-        responseText = `Voice input captured and transcribed: "${text}". Awaiting further instructions.`;
-      } else if (orbState === 'completed') {
-        responseText = `Task completed successfully for: "${text}". All operations executed within expected parameters.`;
-      }
-
+    try {
+      const responseData = await sendChatMessage({ message: text });
       setOrbState('speaking');
 
       const jarvisMsg: ChatMessage = {
         id: `jarvis-${Date.now()}`,
         sender: 'jarvis',
-        text: responseText,
+        text: responseData.response,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-        isStreaming: true,
+        isStreaming: false,
       };
+
       setMessages((prev) => [...prev, jarvisMsg]);
+      setOrbState('completed');
 
-      // Simulate streaming completion
       setTimeout(() => {
-        setMessages((prev) =>
-          prev.map((m) =>
-            m.id === jarvisMsg.id ? { ...m, isStreaming: false } : m
-          )
-        );
-        setOrbState('completed');
+        setOrbState('idle');
+      }, 2000);
+    } catch (error) {
+      const errorMessage =
+        error instanceof Error ? error.message : 'Communication error with JARVIS backend.';
 
-        // Return to idle after completed
-        setTimeout(() => setOrbState('idle'), 2000);
-      }, 1500);
-    }, 1200);
+      const jarvisErrorMsg: ChatMessage = {
+        id: `jarvis-err-${Date.now()}`,
+        sender: 'jarvis',
+        text: `[SYSTEM ALERT] ${errorMessage}`,
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+        isStreaming: false,
+      };
+
+      setMessages((prev) => [...prev, jarvisErrorMsg]);
+      setOrbState('idle');
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (

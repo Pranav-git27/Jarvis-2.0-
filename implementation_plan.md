@@ -68,11 +68,12 @@ This plan outlines the architecture and step-by-step roadmap to complete all rem
 - `sendChatStream(request)` → `POST /api/chat/stream`, parse SSE event stream with AsyncGenerator.
 - `streamChatMessage(request, onChunk)` → callback wrapper forwarding tokens to `onChunk`.
 
-#### [MODIFY] Frontend — `d:\JARVIS 2.0\jarvis-frontend\src\App.tsx`
-- Wire `handleSendMessage` to `api.ts`; delete the mock `setTimeout` response block and the stale-`orbState` branches.
-- Create empty `jarvisMsg` with `isStreaming: true`; append chunks in real time via `setMessages`.
-- Drive orb states: `thinking` on send → `speaking` on first chunk → `completed` on finish → `idle` after ~2s.
-- Guard against concurrent streams (disable send while active).
+#### [MODIFY] [COMPLETED CHUNK 8] Frontend — `d:\JARVIS 2.0\jarvis-frontend\src\App.tsx`
+- Wired `handleSendMessage` to `sendChatMessage` from `api.ts` for non-streaming `POST /api/chat`.
+- Removed mock `setTimeout` response generation.
+- Drove orb states: `thinking` while awaiting backend API response → `speaking` on response receipt → `completed` → `idle` after ~2s.
+- Added loading state guard (`isLoading`) to prevent accidental duplicate submissions.
+- Added graceful error display handling in the conversation drawer.
 
 #### [REMOVE] Frontend — Gemini key & `gemini.ts`
 - Delete `src/services/gemini.ts` if present; the frontend must not hold an API key.

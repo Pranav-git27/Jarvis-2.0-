@@ -17,7 +17,7 @@ A premium 3D interactive AI Operating System UI with particle orb, sci-fi HUD gl
 | **Typography** | Orbitron, Rajdhani, JetBrains Mono, Inter (Google Fonts) | ✅ Done |
 | **Animations** | CSS Glassmorphism + R3F lerping + GPU-accelerated keyframes | ✅ Done |
 | **Styling** | Custom Sci-Fi CSS Design Tokens + CSS Variables | ✅ Done |
-| **AI** | Gemini API (Flash free tier) | 🔲 Pending |
+| **AI** | Gemini API (Flash free tier) | 🟡 Non-Streaming Connected (Chunk 8) |
 | **TTS** | Pocket TTS (Python FastAPI backend) | 🔲 Pending |
 | **STT** | Web Speech API (browser-native) | 🔲 Pending |
 
@@ -128,6 +128,12 @@ D:\JARVIS 2.0\
 - **SSE Buffering**: Robust line & boundary handling for split network reads across `\n\n` delimiters.
 - **Callback Wrapper**: `streamChatMessage(request, onChunk)` for callback-based stream consumption.
 - **Security & Scope**: No Gemini SDK imported; zero API keys in frontend; no direct Gemini API calls.
+
+### 11. Chat UI Non-Streaming Integration (`src/App.tsx`) — Completed Chunk 8
+- **End-to-End Chat Flow**: Connected `handleSendMessage` in `App.tsx` to `sendChatMessage()` targeting `POST /api/chat`.
+- **Orb State Lifecycle**: Automatically transitions `idle → thinking → speaking → completed → idle` around backend requests.
+- **Submission Guard**: Prevents accidental duplicate submissions while `isLoading` / `orbState === 'thinking'`.
+- **Graceful Error Alerts**: Catches API/network errors and presents user-friendly alert messages in transcript drawer without exposing raw stack traces.
 
 ---
 
