@@ -1,8 +1,6 @@
 {
   "communities": {
     "0": [
-      "jarvis_frontend_src_app",
-      "jarvis_frontend_src_app_app",
       "jarvis_frontend_src_components_activitypanel",
       "jarvis_frontend_src_components_activitypanel_activityitem",
       "jarvis_frontend_src_components_activitypanel_activitypanel",
@@ -31,8 +29,7 @@
       "jarvis_frontend_src_components_stateselector",
       "jarvis_frontend_src_components_stateselector_states",
       "jarvis_frontend_src_components_stateselector_stateselector",
-      "jarvis_frontend_src_components_stateselector_stateselectorprops",
-      "jarvis_frontend_src_main"
+      "jarvis_frontend_src_components_stateselector_stateselectorprops"
     ],
     "1": [
       "jarvis_frontend_src_services_api",
@@ -142,35 +139,40 @@
       "jarvis_frontend_src_components_backgrounddepth_starfield"
     ],
     "11": [
+      "jarvis_frontend_src_app",
+      "jarvis_frontend_src_app_app",
+      "jarvis_frontend_src_main"
+    ],
+    "12": [
       "jarvis_backend_app_ai_init",
       "jarvis_backend_app_ai_init_rationale_1"
     ],
-    "12": [
+    "13": [
       "jarvis_backend_app_api_init",
       "jarvis_backend_app_api_init_rationale_1"
     ],
-    "13": [
+    "14": [
       "jarvis_backend_app_init",
       "jarvis_backend_app_init_rationale_1"
     ],
-    "14": [
+    "15": [
       "jarvis_backend_app_models_init",
       "jarvis_backend_app_models_init_rationale_1"
     ],
-    "15": [
+    "16": [
       "jarvis_backend_app_services_init",
       "jarvis_backend_app_services_init_rationale_1"
     ],
-    "16": [
+    "17": [
       "jarvis_backend_app_utils_init",
       "jarvis_backend_app_utils_init_rationale_1"
     ],
-    "17": [
+    "18": [
       "jarvis_frontend_vite_config"
     ]
   },
   "cohesion": {
-    "0": 0.1028225806451613,
+    "0": 0.09359605911330049,
     "1": 0.27472527472527475,
     "2": 0.16666666666666666,
     "3": 0.19696969696969696,
@@ -187,13 +189,14 @@
     "14": 1.0,
     "15": 1.0,
     "16": 1.0,
-    "17": 1.0
+    "17": 1.0,
+    "18": 1.0
   },
   "gods": [
     {
       "id": "jarvis_frontend_src_components_particleblob_orbstate",
       "label": "OrbState",
-      "degree": 14
+      "degree": 13
     },
     {
       "id": "jarvis_backend_app_ai_gemini_service_geminiservice",

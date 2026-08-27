@@ -9,9 +9,9 @@
       "source_file": "jarvis-backend/app/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_init",
-      "community": 13,
-      "norm_label": "__init__.py"
+      "community": 14,
+      "norm_label": "__init__.py",
+      "id": "jarvis_backend_app_init"
     },
     {
       "label": "JARVIS 2.0 Application Package.",
@@ -19,9 +19,9 @@
       "source_file": "jarvis-backend/app/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_init_rationale_1",
-      "community": 13,
-      "norm_label": "jarvis 2.0 application package."
+      "community": 14,
+      "norm_label": "jarvis 2.0 application package.",
+      "id": "jarvis_backend_app_init_rationale_1"
     },
     {
       "label": "__init__.py",
@@ -29,9 +29,9 @@
       "source_file": "jarvis-backend/app/ai/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_init",
-      "community": 11,
-      "norm_label": "__init__.py"
+      "community": 12,
+      "norm_label": "__init__.py",
+      "id": "jarvis_backend_app_ai_init"
     },
     {
       "label": "AI module containing model providers and prompt management.",
@@ -39,9 +39,9 @@
       "source_file": "jarvis-backend/app/ai/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_init_rationale_1",
-      "community": 11,
-      "norm_label": "ai module containing model providers and prompt management."
+      "community": 12,
+      "norm_label": "ai module containing model providers and prompt management.",
+      "id": "jarvis_backend_app_ai_init_rationale_1"
     },
     {
       "label": "gemini_service.py",
@@ -49,9 +49,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_gemini_service",
       "community": 5,
-      "norm_label": "gemini_service.py"
+      "norm_label": "gemini_service.py",
+      "id": "jarvis_backend_app_ai_gemini_service"
     },
     {
       "label": "GeminiService",
@@ -59,9 +59,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_gemini_service_geminiservice",
       "community": 4,
-      "norm_label": "geminiservice"
+      "norm_label": "geminiservice",
+      "id": "jarvis_backend_app_ai_gemini_service_geminiservice"
     },
     {
       "label": ".__init__()",
@@ -69,9 +69,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_gemini_service_geminiservice_init",
       "community": 4,
-      "norm_label": ".__init__()"
+      "norm_label": ".__init__()",
+      "id": "jarvis_backend_app_ai_gemini_service_geminiservice_init"
     },
     {
       "label": ".generate_response()",
@@ -79,9 +79,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L22",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_gemini_service_geminiservice_generate_response",
       "community": 4,
-      "norm_label": ".generate_response()"
+      "norm_label": ".generate_response()",
+      "id": "jarvis_backend_app_ai_gemini_service_geminiservice_generate_response"
     },
     {
       "label": ".stream_response()",
@@ -89,9 +89,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L33",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_gemini_service_geminiservice_stream_response",
       "community": 4,
-      "norm_label": ".stream_response()"
+      "norm_label": ".stream_response()",
+      "id": "jarvis_backend_app_ai_gemini_service_geminiservice_stream_response"
     },
     {
       "label": "._response_text()",
@@ -99,9 +99,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L48",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_gemini_service_geminiservice_response_text",
       "community": 4,
-      "norm_label": "._response_text()"
+      "norm_label": "._response_text()",
+      "id": "jarvis_backend_app_ai_gemini_service_geminiservice_response_text"
     },
     {
       "label": "Any",
@@ -109,9 +109,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "any",
       "community": 4,
-      "norm_label": "any"
+      "norm_label": "any",
+      "id": "any"
     },
     {
       "label": "Gemini implementation of the provider-agnostic AI contract.",
@@ -119,9 +119,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_gemini_service_rationale_1",
       "community": 5,
-      "norm_label": "gemini implementation of the provider-agnostic ai contract."
+      "norm_label": "gemini implementation of the provider-agnostic ai contract.",
+      "id": "jarvis_backend_app_ai_gemini_service_rationale_1"
     },
     {
       "label": "Generate text with Google's Gemini API through the modern GenAI SDK.",
@@ -129,9 +129,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_gemini_service_rationale_13",
       "community": 4,
-      "norm_label": "generate text with google's gemini api through the modern genai sdk."
+      "norm_label": "generate text with google's gemini api through the modern genai sdk.",
+      "id": "jarvis_backend_app_ai_gemini_service_rationale_13"
     },
     {
       "label": "Create a Gemini client using the backend-configured API key.",
@@ -139,9 +139,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_gemini_service_rationale_18",
       "community": 4,
-      "norm_label": "create a gemini client using the backend-configured api key."
+      "norm_label": "create a gemini client using the backend-configured api key.",
+      "id": "jarvis_backend_app_ai_gemini_service_rationale_18"
     },
     {
       "label": "Generate and return the complete text response for ``prompt``.",
@@ -149,9 +149,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L23",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_gemini_service_rationale_23",
       "community": 4,
-      "norm_label": "generate and return the complete text response for ``prompt``."
+      "norm_label": "generate and return the complete text response for ``prompt``.",
+      "id": "jarvis_backend_app_ai_gemini_service_rationale_23"
     },
     {
       "label": "Yield non-empty text chunks from Gemini's asynchronous stream.",
@@ -159,9 +159,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L34",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_gemini_service_rationale_34",
       "community": 4,
-      "norm_label": "yield non-empty text chunks from gemini's asynchronous stream."
+      "norm_label": "yield non-empty text chunks from gemini's asynchronous stream.",
+      "id": "jarvis_backend_app_ai_gemini_service_rationale_34"
     },
     {
       "label": "Extract provider response text while tolerating empty SDK chunks.",
@@ -169,9 +169,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L49",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_gemini_service_rationale_49",
       "community": 4,
-      "norm_label": "extract provider response text while tolerating empty sdk chunks."
+      "norm_label": "extract provider response text while tolerating empty sdk chunks.",
+      "id": "jarvis_backend_app_ai_gemini_service_rationale_49"
     },
     {
       "label": "provider.py",
@@ -179,9 +179,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_provider",
       "community": 2,
-      "norm_label": "provider.py"
+      "norm_label": "provider.py",
+      "id": "jarvis_backend_app_ai_provider"
     },
     {
       "label": "AIProvider",
@@ -189,9 +189,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_provider_aiprovider",
       "community": 2,
-      "norm_label": "aiprovider"
+      "norm_label": "aiprovider",
+      "id": "jarvis_backend_app_ai_provider_aiprovider"
     },
     {
       "label": "ABC",
@@ -199,9 +199,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "abc",
       "community": 2,
-      "norm_label": "abc"
+      "norm_label": "abc",
+      "id": "abc"
     },
     {
       "label": ".generate_response()",
@@ -209,9 +209,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_provider_aiprovider_generate_response",
       "community": 2,
-      "norm_label": ".generate_response()"
+      "norm_label": ".generate_response()",
+      "id": "jarvis_backend_app_ai_provider_aiprovider_generate_response"
     },
     {
       "label": ".stream_response()",
@@ -219,9 +219,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_provider_aiprovider_stream_response",
       "community": 2,
-      "norm_label": ".stream_response()"
+      "norm_label": ".stream_response()",
+      "id": "jarvis_backend_app_ai_provider_aiprovider_stream_response"
     },
     {
       "label": "Provider-agnostic contract for AI text generation.",
@@ -229,9 +229,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_provider_rationale_1",
       "community": 2,
-      "norm_label": "provider-agnostic contract for ai text generation."
+      "norm_label": "provider-agnostic contract for ai text generation.",
+      "id": "jarvis_backend_app_ai_provider_rationale_1"
     },
     {
       "label": "Define the text-generation capabilities required from an AI provider.",
@@ -239,9 +239,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_provider_rationale_8",
       "community": 2,
-      "norm_label": "define the text-generation capabilities required from an ai provider."
+      "norm_label": "define the text-generation capabilities required from an ai provider.",
+      "id": "jarvis_backend_app_ai_provider_rationale_8"
     },
     {
       "label": "Generate and return a complete response for a prompt.",
@@ -249,9 +249,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L12",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_provider_rationale_12",
       "community": 2,
-      "norm_label": "generate and return a complete response for a prompt."
+      "norm_label": "generate and return a complete response for a prompt.",
+      "id": "jarvis_backend_app_ai_provider_rationale_12"
     },
     {
       "label": "Generate a response as an asynchronous stream of text chunks.",
@@ -259,9 +259,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "jarvis_backend_app_ai_provider_rationale_16",
       "community": 2,
-      "norm_label": "generate a response as an asynchronous stream of text chunks."
+      "norm_label": "generate a response as an asynchronous stream of text chunks.",
+      "id": "jarvis_backend_app_ai_provider_rationale_16"
     },
     {
       "label": "__init__.py",
@@ -269,9 +269,9 @@
       "source_file": "jarvis-backend/app/api/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_init",
-      "community": 12,
-      "norm_label": "__init__.py"
+      "community": 13,
+      "norm_label": "__init__.py",
+      "id": "jarvis_backend_app_api_init"
     },
     {
       "label": "API module containing route handlers and endpoints.",
@@ -279,9 +279,9 @@
       "source_file": "jarvis-backend/app/api/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_init_rationale_1",
-      "community": 12,
-      "norm_label": "api module containing route handlers and endpoints."
+      "community": 13,
+      "norm_label": "api module containing route handlers and endpoints.",
+      "id": "jarvis_backend_app_api_init_rationale_1"
     },
     {
       "label": "chat.py",
@@ -289,9 +289,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_chat",
       "community": 3,
-      "norm_label": "chat.py"
+      "norm_label": "chat.py",
+      "id": "jarvis_backend_app_api_chat"
     },
     {
       "label": "create_chat_response()",
@@ -299,9 +299,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_chat_create_chat_response",
       "community": 3,
-      "norm_label": "create_chat_response()"
+      "norm_label": "create_chat_response()",
+      "id": "jarvis_backend_app_api_chat_create_chat_response"
     },
     {
       "label": "ChatRequest",
@@ -309,9 +309,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "chatrequest",
       "community": 3,
-      "norm_label": "chatrequest"
+      "norm_label": "chatrequest",
+      "id": "chatrequest"
     },
     {
       "label": "AIProviderDependency",
@@ -319,9 +319,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "aiproviderdependency",
       "community": 3,
-      "norm_label": "aiproviderdependency"
+      "norm_label": "aiproviderdependency",
+      "id": "aiproviderdependency"
     },
     {
       "label": "ChatResponse",
@@ -329,9 +329,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "chatresponse",
       "community": 3,
-      "norm_label": "chatresponse"
+      "norm_label": "chatresponse",
+      "id": "chatresponse"
     },
     {
       "label": "stream_chat_response()",
@@ -339,9 +339,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L38",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_chat_stream_chat_response",
       "community": 3,
-      "norm_label": "stream_chat_response()"
+      "norm_label": "stream_chat_response()",
+      "id": "jarvis_backend_app_api_chat_stream_chat_response"
     },
     {
       "label": "StreamingResponse",
@@ -349,9 +349,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "streamingresponse",
       "community": 3,
-      "norm_label": "streamingresponse"
+      "norm_label": "streamingresponse",
+      "id": "streamingresponse"
     },
     {
       "label": "_format_sse_data()",
@@ -359,9 +359,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L70",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_chat_format_sse_data",
       "community": 3,
-      "norm_label": "_format_sse_data()"
+      "norm_label": "_format_sse_data()",
+      "id": "jarvis_backend_app_api_chat_format_sse_data"
     },
     {
       "label": "Chat API routes for complete and streaming AI responses.",
@@ -369,9 +369,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_chat_rationale_1",
       "community": 3,
-      "norm_label": "chat api routes for complete and streaming ai responses."
+      "norm_label": "chat api routes for complete and streaming ai responses.",
+      "id": "jarvis_backend_app_api_chat_rationale_1"
     },
     {
       "label": "Generate a complete AI response for a validated chat message.",
@@ -379,9 +379,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_chat_rationale_25",
       "community": 3,
-      "norm_label": "generate a complete ai response for a validated chat message."
+      "norm_label": "generate a complete ai response for a validated chat message.",
+      "id": "jarvis_backend_app_api_chat_rationale_25"
     },
     {
       "label": "Stream provider-agnostic text chunks as Server-Sent Events.",
@@ -389,9 +389,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L42",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_chat_rationale_42",
       "community": 3,
-      "norm_label": "stream provider-agnostic text chunks as server-sent events."
+      "norm_label": "stream provider-agnostic text chunks as server-sent events.",
+      "id": "jarvis_backend_app_api_chat_rationale_42"
     },
     {
       "label": "Frame one text chunk as an SSE data event, preserving line breaks.",
@@ -399,9 +399,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L71",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_chat_rationale_71",
       "community": 3,
-      "norm_label": "frame one text chunk as an sse data event, preserving line breaks."
+      "norm_label": "frame one text chunk as an sse data event, preserving line breaks.",
+      "id": "jarvis_backend_app_api_chat_rationale_71"
     },
     {
       "label": "dependencies.py",
@@ -409,9 +409,9 @@
       "source_file": "jarvis-backend/app/api/dependencies.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_dependencies",
       "community": 2,
-      "norm_label": "dependencies.py"
+      "norm_label": "dependencies.py",
+      "id": "jarvis_backend_app_api_dependencies"
     },
     {
       "label": "get_ai_provider()",
@@ -419,9 +419,9 @@
       "source_file": "jarvis-backend/app/api/dependencies.py",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_dependencies_get_ai_provider",
       "community": 2,
-      "norm_label": "get_ai_provider()"
+      "norm_label": "get_ai_provider()",
+      "id": "jarvis_backend_app_api_dependencies_get_ai_provider"
     },
     {
       "label": "FastAPI dependencies for backend service abstractions.",
@@ -429,9 +429,9 @@
       "source_file": "jarvis-backend/app/api/dependencies.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_dependencies_rationale_1",
       "community": 2,
-      "norm_label": "fastapi dependencies for backend service abstractions."
+      "norm_label": "fastapi dependencies for backend service abstractions.",
+      "id": "jarvis_backend_app_api_dependencies_rationale_1"
     },
     {
       "label": "Return the configured application AI provider.",
@@ -439,9 +439,9 @@
       "source_file": "jarvis-backend/app/api/dependencies.py",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "jarvis_backend_app_api_dependencies_rationale_11",
       "community": 2,
-      "norm_label": "return the configured application ai provider."
+      "norm_label": "return the configured application ai provider.",
+      "id": "jarvis_backend_app_api_dependencies_rationale_11"
     },
     {
       "label": "config.py",
@@ -449,9 +449,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_config",
       "community": 5,
-      "norm_label": "config.py"
+      "norm_label": "config.py",
+      "id": "jarvis_backend_app_config"
     },
     {
       "label": "Settings",
@@ -459,9 +459,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "jarvis_backend_app_config_settings",
       "community": 5,
-      "norm_label": "settings"
+      "norm_label": "settings",
+      "id": "jarvis_backend_app_config_settings"
     },
     {
       "label": ".__init__()",
@@ -469,9 +469,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L21",
       "_origin": "ast",
-      "id": "jarvis_backend_app_config_settings_init",
       "community": 5,
-      "norm_label": ".__init__()"
+      "norm_label": ".__init__()",
+      "id": "jarvis_backend_app_config_settings_init"
     },
     {
       "label": ".gemini_api_key()",
@@ -479,9 +479,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L25",
       "_origin": "ast",
-      "id": "jarvis_backend_app_config_settings_gemini_api_key",
       "community": 5,
-      "norm_label": ".gemini_api_key()"
+      "norm_label": ".gemini_api_key()",
+      "id": "jarvis_backend_app_config_settings_gemini_api_key"
     },
     {
       "label": "Configuration module for JARVIS 2.0 backend.  Handles loading and validating app",
@@ -489,9 +489,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_config_rationale_1",
       "community": 5,
-      "norm_label": "configuration module for jarvis 2.0 backend.  handles loading and validating app"
+      "norm_label": "configuration module for jarvis 2.0 backend.  handles loading and validating app",
+      "id": "jarvis_backend_app_config_rationale_1"
     },
     {
       "label": "Application configuration and environment variable loader.",
@@ -499,9 +499,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "jarvis_backend_app_config_rationale_19",
       "community": 5,
-      "norm_label": "application configuration and environment variable loader."
+      "norm_label": "application configuration and environment variable loader.",
+      "id": "jarvis_backend_app_config_rationale_19"
     },
     {
       "label": "Get the Gemini API key from environment variables.          Returns:",
@@ -509,9 +509,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L26",
       "_origin": "ast",
-      "id": "jarvis_backend_app_config_rationale_26",
       "community": 5,
-      "norm_label": "get the gemini api key from environment variables.          returns:"
+      "norm_label": "get the gemini api key from environment variables.          returns:",
+      "id": "jarvis_backend_app_config_rationale_26"
     },
     {
       "label": "main.py",
@@ -519,9 +519,9 @@
       "source_file": "jarvis-backend/app/main.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_main",
       "community": 7,
-      "norm_label": "main.py"
+      "norm_label": "main.py",
+      "id": "jarvis_backend_app_main"
     },
     {
       "label": "read_root()",
@@ -529,9 +529,9 @@
       "source_file": "jarvis-backend/app/main.py",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "jarvis_backend_app_main_read_root",
       "community": 7,
-      "norm_label": "read_root()"
+      "norm_label": "read_root()",
+      "id": "jarvis_backend_app_main_read_root"
     },
     {
       "label": "health_check()",
@@ -539,9 +539,9 @@
       "source_file": "jarvis-backend/app/main.py",
       "source_location": "L38",
       "_origin": "ast",
-      "id": "jarvis_backend_app_main_health_check",
       "community": 7,
-      "norm_label": "health_check()"
+      "norm_label": "health_check()",
+      "id": "jarvis_backend_app_main_health_check"
     },
     {
       "label": "Main entry point for JARVIS 2.0 FastAPI Backend Server.",
@@ -549,9 +549,9 @@
       "source_file": "jarvis-backend/app/main.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_main_rationale_1",
       "community": 7,
-      "norm_label": "main entry point for jarvis 2.0 fastapi backend server."
+      "norm_label": "main entry point for jarvis 2.0 fastapi backend server.",
+      "id": "jarvis_backend_app_main_rationale_1"
     },
     {
       "label": "Root endpoint returning service identity.",
@@ -559,9 +559,9 @@
       "source_file": "jarvis-backend/app/main.py",
       "source_location": "L29",
       "_origin": "ast",
-      "id": "jarvis_backend_app_main_rationale_29",
       "community": 7,
-      "norm_label": "root endpoint returning service identity."
+      "norm_label": "root endpoint returning service identity.",
+      "id": "jarvis_backend_app_main_rationale_29"
     },
     {
       "label": "Health check endpoint for operational monitoring.",
@@ -569,9 +569,9 @@
       "source_file": "jarvis-backend/app/main.py",
       "source_location": "L39",
       "_origin": "ast",
-      "id": "jarvis_backend_app_main_rationale_39",
       "community": 7,
-      "norm_label": "health check endpoint for operational monitoring."
+      "norm_label": "health check endpoint for operational monitoring.",
+      "id": "jarvis_backend_app_main_rationale_39"
     },
     {
       "label": "__init__.py",
@@ -579,9 +579,9 @@
       "source_file": "jarvis-backend/app/models/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_models_init",
-      "community": 14,
-      "norm_label": "__init__.py"
+      "community": 15,
+      "norm_label": "__init__.py",
+      "id": "jarvis_backend_app_models_init"
     },
     {
       "label": "Models module containing Pydantic schemas and data structures.",
@@ -589,9 +589,9 @@
       "source_file": "jarvis-backend/app/models/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_models_init_rationale_1",
-      "community": 14,
-      "norm_label": "models module containing pydantic schemas and data structures."
+      "community": 15,
+      "norm_label": "models module containing pydantic schemas and data structures.",
+      "id": "jarvis_backend_app_models_init_rationale_1"
     },
     {
       "label": "chat_models.py",
@@ -599,9 +599,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_models_chat_models",
       "community": 6,
-      "norm_label": "chat_models.py"
+      "norm_label": "chat_models.py",
+      "id": "jarvis_backend_app_models_chat_models"
     },
     {
       "label": "ChatRequest",
@@ -609,9 +609,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "jarvis_backend_app_models_chat_models_chatrequest",
       "community": 6,
-      "norm_label": "chatrequest"
+      "norm_label": "chatrequest",
+      "id": "jarvis_backend_app_models_chat_models_chatrequest"
     },
     {
       "label": "BaseModel",
@@ -619,9 +619,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "basemodel",
       "community": 6,
-      "norm_label": "basemodel"
+      "norm_label": "basemodel",
+      "id": "basemodel"
     },
     {
       "label": "ChatResponse",
@@ -629,9 +629,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L37",
       "_origin": "ast",
-      "id": "jarvis_backend_app_models_chat_models_chatresponse",
       "community": 6,
-      "norm_label": "chatresponse"
+      "norm_label": "chatresponse",
+      "id": "jarvis_backend_app_models_chat_models_chatresponse"
     },
     {
       "label": "Pydantic models defining the data contract for JARVIS chat communication.  These",
@@ -639,9 +639,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_models_chat_models_rationale_1",
       "community": 6,
-      "norm_label": "pydantic models defining the data contract for jarvis chat communication.  these"
+      "norm_label": "pydantic models defining the data contract for jarvis chat communication.  these",
+      "id": "jarvis_backend_app_models_chat_models_rationale_1"
     },
     {
       "label": "A chat request sent from the frontend to the backend.",
@@ -649,9 +649,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L20",
       "_origin": "ast",
-      "id": "jarvis_backend_app_models_chat_models_rationale_20",
       "community": 6,
-      "norm_label": "a chat request sent from the frontend to the backend."
+      "norm_label": "a chat request sent from the frontend to the backend.",
+      "id": "jarvis_backend_app_models_chat_models_rationale_20"
     },
     {
       "label": "A complete non-streaming response returned by the backend.",
@@ -659,9 +659,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L38",
       "_origin": "ast",
-      "id": "jarvis_backend_app_models_chat_models_rationale_38",
       "community": 6,
-      "norm_label": "a complete non-streaming response returned by the backend."
+      "norm_label": "a complete non-streaming response returned by the backend.",
+      "id": "jarvis_backend_app_models_chat_models_rationale_38"
     },
     {
       "label": "__init__.py",
@@ -669,9 +669,9 @@
       "source_file": "jarvis-backend/app/services/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_services_init",
-      "community": 15,
-      "norm_label": "__init__.py"
+      "community": 16,
+      "norm_label": "__init__.py",
+      "id": "jarvis_backend_app_services_init"
     },
     {
       "label": "Services module containing business logic and external integrations.",
@@ -679,9 +679,9 @@
       "source_file": "jarvis-backend/app/services/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_services_init_rationale_1",
-      "community": 15,
-      "norm_label": "services module containing business logic and external integrations."
+      "community": 16,
+      "norm_label": "services module containing business logic and external integrations.",
+      "id": "jarvis_backend_app_services_init_rationale_1"
     },
     {
       "label": "__init__.py",
@@ -689,9 +689,9 @@
       "source_file": "jarvis-backend/app/utils/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_utils_init",
-      "community": 16,
-      "norm_label": "__init__.py"
+      "community": 17,
+      "norm_label": "__init__.py",
+      "id": "jarvis_backend_app_utils_init"
     },
     {
       "label": "Utils module containing shared helper utilities and tools.",
@@ -699,9 +699,609 @@
       "source_file": "jarvis-backend/app/utils/__init__.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "jarvis_backend_app_utils_init_rationale_1",
-      "community": 16,
-      "norm_label": "utils module containing shared helper utilities and tools."
+      "community": 17,
+      "norm_label": "utils module containing shared helper utilities and tools.",
+      "id": "jarvis_backend_app_utils_init_rationale_1"
+    },
+    {
+      "label": "ActivityPanel.tsx",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "activitypanel.tsx",
+      "id": "jarvis_frontend_src_components_activitypanel"
+    },
+    {
+      "label": "ActivityPanelProps",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "activitypanelprops",
+      "id": "jarvis_frontend_src_components_activitypanel_activitypanelprops"
+    },
+    {
+      "label": "ActivityItem",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "activityitem",
+      "id": "jarvis_frontend_src_components_activitypanel_activityitem"
+    },
+    {
+      "label": "STATE_ACTIVITIES",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "state_activities",
+      "id": "jarvis_frontend_src_components_activitypanel_state_activities"
+    },
+    {
+      "label": "ActivityPanel()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
+      "source_location": "L41",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "activitypanel()",
+      "id": "jarvis_frontend_src_components_activitypanel_activitypanel"
+    },
+    {
+      "label": "BackgroundDepth.tsx",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/BackgroundDepth.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "backgrounddepth.tsx",
+      "id": "jarvis_frontend_src_components_backgrounddepth"
+    },
+    {
+      "label": "StarField()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/BackgroundDepth.tsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "starfield()",
+      "id": "jarvis_frontend_src_components_backgrounddepth_starfield"
+    },
+    {
+      "label": "FloatingDust()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/BackgroundDepth.tsx",
+      "source_location": "L36",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "floatingdust()",
+      "id": "jarvis_frontend_src_components_backgrounddepth_floatingdust"
+    },
+    {
+      "label": "BackgroundDepth()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/BackgroundDepth.tsx",
+      "source_location": "L68",
+      "_origin": "ast",
+      "community": 10,
+      "norm_label": "backgrounddepth()",
+      "id": "jarvis_frontend_src_components_backgrounddepth_backgrounddepth"
+    },
+    {
+      "label": "ChatDrawer.tsx",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "chatdrawer.tsx",
+      "id": "jarvis_frontend_src_components_chatdrawer"
+    },
+    {
+      "label": "ChatMessage",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "chatmessage",
+      "id": "jarvis_frontend_src_components_chatdrawer_chatmessage"
+    },
+    {
+      "label": "ChatDrawerProps",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "chatdrawerprops",
+      "id": "jarvis_frontend_src_components_chatdrawer_chatdrawerprops"
+    },
+    {
+      "label": "renderMessageContent()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
+      "source_location": "L20",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "rendermessagecontent()",
+      "id": "jarvis_frontend_src_components_chatdrawer_rendermessagecontent"
+    },
+    {
+      "label": "MessageBubble()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
+      "source_location": "L57",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "messagebubble()",
+      "id": "jarvis_frontend_src_components_chatdrawer_messagebubble"
+    },
+    {
+      "label": "ChatDrawer()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
+      "source_location": "L89",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "chatdrawer()",
+      "id": "jarvis_frontend_src_components_chatdrawer_chatdrawer"
+    },
+    {
+      "label": "CommandBar.tsx",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "commandbar.tsx",
+      "id": "jarvis_frontend_src_components_commandbar"
+    },
+    {
+      "label": "CommandBarProps",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "commandbarprops",
+      "id": "jarvis_frontend_src_components_commandbar_commandbarprops"
+    },
+    {
+      "label": "ACTION_CHIPS",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "action_chips",
+      "id": "jarvis_frontend_src_components_commandbar_action_chips"
+    },
+    {
+      "label": "CommandBar()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
+      "source_location": "L19",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "commandbar()",
+      "id": "jarvis_frontend_src_components_commandbar_commandbar"
+    },
+    {
+      "label": "HUDHeader.tsx",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "hudheader.tsx",
+      "id": "jarvis_frontend_src_components_hudheader"
+    },
+    {
+      "label": "HUDHeaderProps",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "hudheaderprops",
+      "id": "jarvis_frontend_src_components_hudheader_hudheaderprops"
+    },
+    {
+      "label": "STATE_LABELS",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "state_labels",
+      "id": "jarvis_frontend_src_components_hudheader_state_labels"
+    },
+    {
+      "label": "STATE_COLORS",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
+      "source_location": "L24",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "state_colors",
+      "id": "jarvis_frontend_src_components_hudheader_state_colors"
+    },
+    {
+      "label": "HUDHeader()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
+      "source_location": "L33",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "hudheader()",
+      "id": "jarvis_frontend_src_components_hudheader_hudheader"
+    },
+    {
+      "label": "ParticleBlob.tsx",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "particleblob.tsx",
+      "id": "jarvis_frontend_src_components_particleblob"
+    },
+    {
+      "label": "OrbState",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "orbstate",
+      "id": "jarvis_frontend_src_components_particleblob_orbstate"
+    },
+    {
+      "label": "STATE_CONFIG",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "state_config",
+      "id": "jarvis_frontend_src_components_particleblob_state_config"
+    },
+    {
+      "label": "fibonacciSphere()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
+      "source_location": "L91",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "fibonaccisphere()",
+      "id": "jarvis_frontend_src_components_particleblob_fibonaccisphere"
+    },
+    {
+      "label": "ParticlesProps",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
+      "source_location": "L108",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "particlesprops",
+      "id": "jarvis_frontend_src_components_particleblob_particlesprops"
+    },
+    {
+      "label": "Particles()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
+      "source_location": "L112",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "particles()",
+      "id": "jarvis_frontend_src_components_particleblob_particles"
+    },
+    {
+      "label": "ParticleBlobProps",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
+      "source_location": "L264",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "particleblobprops",
+      "id": "jarvis_frontend_src_components_particleblob_particleblobprops"
+    },
+    {
+      "label": "ParticleBlob()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
+      "source_location": "L268",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "particleblob()",
+      "id": "jarvis_frontend_src_components_particleblob_particleblob"
+    },
+    {
+      "label": "SciFiOverlay.tsx",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/SciFiOverlay.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "scifioverlay.tsx",
+      "id": "jarvis_frontend_src_components_scifioverlay"
+    },
+    {
+      "label": "SciFiOverlayProps",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/SciFiOverlay.tsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "scifioverlayprops",
+      "id": "jarvis_frontend_src_components_scifioverlay_scifioverlayprops"
+    },
+    {
+      "label": "SciFiOverlay()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/SciFiOverlay.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "scifioverlay()",
+      "id": "jarvis_frontend_src_components_scifioverlay_scifioverlay"
+    },
+    {
+      "label": "StateSelector.tsx",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "stateselector.tsx",
+      "id": "jarvis_frontend_src_components_stateselector"
+    },
+    {
+      "label": "StateSelectorProps",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
+      "source_location": "L7",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "stateselectorprops",
+      "id": "jarvis_frontend_src_components_stateselector_stateselectorprops"
+    },
+    {
+      "label": "STATES",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
+      "source_location": "L12",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "states",
+      "id": "jarvis_frontend_src_components_stateselector_states"
+    },
+    {
+      "label": "StateSelector()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
+      "source_location": "L21",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "stateselector()",
+      "id": "jarvis_frontend_src_components_stateselector_stateselector"
+    },
+    {
+      "label": "WorkflowIndicator.tsx",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "workflowindicator.tsx",
+      "id": "jarvis_frontend_src_components_workflowindicator"
+    },
+    {
+      "label": "WorkflowIndicatorProps",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
+      "source_location": "L4",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "workflowindicatorprops",
+      "id": "jarvis_frontend_src_components_workflowindicator_workflowindicatorprops"
+    },
+    {
+      "label": "WORKFLOW_STAGES",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
+      "source_location": "L8",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "workflow_stages",
+      "id": "jarvis_frontend_src_components_workflowindicator_workflow_stages"
+    },
+    {
+      "label": "getActiveIndex()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
+      "source_location": "L16",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "getactiveindex()",
+      "id": "jarvis_frontend_src_components_workflowindicator_getactiveindex"
+    },
+    {
+      "label": "WorkflowIndicator()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
+      "source_location": "L27",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "workflowindicator()",
+      "id": "jarvis_frontend_src_components_workflowindicator_workflowindicator"
+    },
+    {
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/main.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 11,
+      "norm_label": "main.tsx",
+      "id": "jarvis_frontend_src_main"
+    },
+    {
+      "label": "api.ts",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "api.ts",
+      "id": "jarvis_frontend_src_services_api"
+    },
+    {
+      "label": "ChatRequest",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.ts",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "chatrequest",
+      "id": "jarvis_frontend_src_services_api_chatrequest"
+    },
+    {
+      "label": "ChatResponse",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.ts",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "chatresponse",
+      "id": "jarvis_frontend_src_services_api_chatresponse"
+    },
+    {
+      "label": "ApiClientOptions",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.ts",
+      "source_location": "L21",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "apiclientoptions",
+      "id": "jarvis_frontend_src_services_api_apiclientoptions"
+    },
+    {
+      "label": "ApiError",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.ts",
+      "source_location": "L26",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "apierror",
+      "id": "jarvis_frontend_src_services_api_apierror"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.ts",
+      "source_location": "L29",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": ".constructor()",
+      "id": "jarvis_frontend_src_services_api_apierror_constructor"
+    },
+    {
+      "label": "getApiBaseUrl()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.ts",
+      "source_location": "L44",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "getapibaseurl()",
+      "id": "jarvis_frontend_src_services_api_getapibaseurl"
+    },
+    {
+      "label": "buildEndpointUrl()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.ts",
+      "source_location": "L55",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "buildendpointurl()",
+      "id": "jarvis_frontend_src_services_api_buildendpointurl"
+    },
+    {
+      "label": "parseSseEventBlock()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.ts",
+      "source_location": "L64",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "parsesseeventblock()",
+      "id": "jarvis_frontend_src_services_api_parsesseeventblock"
+    },
+    {
+      "label": "sendChatMessage()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.ts",
+      "source_location": "L90",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "sendchatmessage()",
+      "id": "jarvis_frontend_src_services_api_sendchatmessage"
+    },
+    {
+      "label": "streamChatMessage()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.ts",
+      "source_location": "L260",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "streamchatmessage()",
+      "id": "jarvis_frontend_src_services_api_streamchatmessage"
+    },
+    {
+      "label": "api.validation.ts",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.validation.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "api.validation.ts",
+      "id": "jarvis_frontend_src_services_api_validation"
+    },
+    {
+      "label": "assert()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.validation.ts",
+      "source_location": "L11",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "assert()",
+      "id": "jarvis_frontend_src_services_api_validation_assert"
+    },
+    {
+      "label": "runApiValidations()",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/src/services/api.validation.ts",
+      "source_location": "L22",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "runapivalidations()",
+      "id": "jarvis_frontend_src_services_api_validation_runapivalidations"
+    },
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "jarvis-frontend/vite.config.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 18,
+      "norm_label": "vite.config.ts",
+      "id": "jarvis_frontend_vite_config"
     },
     {
       "label": "App.tsx",
@@ -710,618 +1310,18 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "jarvis_frontend_src_app",
-      "community": 0,
+      "community": 11,
       "norm_label": "app.tsx"
     },
     {
       "label": "App()",
       "file_type": "code",
       "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_app_app",
-      "community": 0,
-      "norm_label": "app()"
-    },
-    {
-      "label": "ActivityPanel.tsx",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_activitypanel",
-      "community": 0,
-      "norm_label": "activitypanel.tsx"
-    },
-    {
-      "label": "ActivityPanelProps",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
-      "source_location": "L5",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_activitypanel_activitypanelprops",
-      "community": 0,
-      "norm_label": "activitypanelprops"
-    },
-    {
-      "label": "ActivityItem",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_activitypanel_activityitem",
-      "community": 0,
-      "norm_label": "activityitem"
-    },
-    {
-      "label": "STATE_ACTIVITIES",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_activitypanel_state_activities",
-      "community": 0,
-      "norm_label": "state_activities"
-    },
-    {
-      "label": "ActivityPanel()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
-      "source_location": "L41",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_activitypanel_activitypanel",
-      "community": 0,
-      "norm_label": "activitypanel()"
-    },
-    {
-      "label": "BackgroundDepth.tsx",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/BackgroundDepth.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_backgrounddepth",
-      "community": 10,
-      "norm_label": "backgrounddepth.tsx"
-    },
-    {
-      "label": "StarField()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/BackgroundDepth.tsx",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_backgrounddepth_starfield",
-      "community": 10,
-      "norm_label": "starfield()"
-    },
-    {
-      "label": "FloatingDust()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/BackgroundDepth.tsx",
-      "source_location": "L36",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_backgrounddepth_floatingdust",
-      "community": 10,
-      "norm_label": "floatingdust()"
-    },
-    {
-      "label": "BackgroundDepth()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/BackgroundDepth.tsx",
-      "source_location": "L68",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_backgrounddepth_backgrounddepth",
-      "community": 10,
-      "norm_label": "backgrounddepth()"
-    },
-    {
-      "label": "ChatDrawer.tsx",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_chatdrawer",
-      "community": 8,
-      "norm_label": "chatdrawer.tsx"
-    },
-    {
-      "label": "ChatMessage",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_chatdrawer_chatmessage",
-      "community": 8,
-      "norm_label": "chatmessage"
-    },
-    {
-      "label": "ChatDrawerProps",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
-      "source_location": "L14",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_chatdrawer_chatdrawerprops",
-      "community": 8,
-      "norm_label": "chatdrawerprops"
-    },
-    {
-      "label": "renderMessageContent()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
-      "source_location": "L20",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_chatdrawer_rendermessagecontent",
-      "community": 8,
-      "norm_label": "rendermessagecontent()"
-    },
-    {
-      "label": "MessageBubble()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
-      "source_location": "L57",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_chatdrawer_messagebubble",
-      "community": 8,
-      "norm_label": "messagebubble()"
-    },
-    {
-      "label": "ChatDrawer()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
-      "source_location": "L89",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_chatdrawer_chatdrawer",
-      "community": 8,
-      "norm_label": "chatdrawer()"
-    },
-    {
-      "label": "CommandBar.tsx",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_commandbar",
-      "community": 0,
-      "norm_label": "commandbar.tsx"
-    },
-    {
-      "label": "CommandBarProps",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_commandbar_commandbarprops",
-      "community": 0,
-      "norm_label": "commandbarprops"
-    },
-    {
-      "label": "ACTION_CHIPS",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_commandbar_action_chips",
-      "community": 0,
-      "norm_label": "action_chips"
-    },
-    {
-      "label": "CommandBar()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_commandbar_commandbar",
-      "community": 0,
-      "norm_label": "commandbar()"
-    },
-    {
-      "label": "HUDHeader.tsx",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_hudheader",
-      "community": 0,
-      "norm_label": "hudheader.tsx"
-    },
-    {
-      "label": "HUDHeaderProps",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
-      "source_location": "L9",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_hudheader_hudheaderprops",
-      "community": 0,
-      "norm_label": "hudheaderprops"
-    },
-    {
-      "label": "STATE_LABELS",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
       "source_location": "L15",
       "_origin": "ast",
-      "id": "jarvis_frontend_src_components_hudheader_state_labels",
-      "community": 0,
-      "norm_label": "state_labels"
-    },
-    {
-      "label": "STATE_COLORS",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
-      "source_location": "L24",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_hudheader_state_colors",
-      "community": 0,
-      "norm_label": "state_colors"
-    },
-    {
-      "label": "HUDHeader()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
-      "source_location": "L33",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_hudheader_hudheader",
-      "community": 0,
-      "norm_label": "hudheader()"
-    },
-    {
-      "label": "ParticleBlob.tsx",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_particleblob",
-      "community": 0,
-      "norm_label": "particleblob.tsx"
-    },
-    {
-      "label": "OrbState",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_particleblob_orbstate",
-      "community": 0,
-      "norm_label": "orbstate"
-    },
-    {
-      "label": "STATE_CONFIG",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_particleblob_state_config",
-      "community": 0,
-      "norm_label": "state_config"
-    },
-    {
-      "label": "fibonacciSphere()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
-      "source_location": "L91",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_particleblob_fibonaccisphere",
-      "community": 0,
-      "norm_label": "fibonaccisphere()"
-    },
-    {
-      "label": "ParticlesProps",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
-      "source_location": "L108",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_particleblob_particlesprops",
-      "community": 0,
-      "norm_label": "particlesprops"
-    },
-    {
-      "label": "Particles()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
-      "source_location": "L112",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_particleblob_particles",
-      "community": 0,
-      "norm_label": "particles()"
-    },
-    {
-      "label": "ParticleBlobProps",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
-      "source_location": "L264",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_particleblob_particleblobprops",
-      "community": 0,
-      "norm_label": "particleblobprops"
-    },
-    {
-      "label": "ParticleBlob()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
-      "source_location": "L268",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_particleblob_particleblob",
-      "community": 0,
-      "norm_label": "particleblob()"
-    },
-    {
-      "label": "SciFiOverlay.tsx",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/SciFiOverlay.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_scifioverlay",
-      "community": 0,
-      "norm_label": "scifioverlay.tsx"
-    },
-    {
-      "label": "SciFiOverlayProps",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/SciFiOverlay.tsx",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_scifioverlay_scifioverlayprops",
-      "community": 0,
-      "norm_label": "scifioverlayprops"
-    },
-    {
-      "label": "SciFiOverlay()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/SciFiOverlay.tsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_scifioverlay_scifioverlay",
-      "community": 0,
-      "norm_label": "scifioverlay()"
-    },
-    {
-      "label": "StateSelector.tsx",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_stateselector",
-      "community": 0,
-      "norm_label": "stateselector.tsx"
-    },
-    {
-      "label": "StateSelectorProps",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
-      "source_location": "L7",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_stateselector_stateselectorprops",
-      "community": 0,
-      "norm_label": "stateselectorprops"
-    },
-    {
-      "label": "STATES",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
-      "source_location": "L12",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_stateselector_states",
-      "community": 0,
-      "norm_label": "states"
-    },
-    {
-      "label": "StateSelector()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_stateselector_stateselector",
-      "community": 0,
-      "norm_label": "stateselector()"
-    },
-    {
-      "label": "WorkflowIndicator.tsx",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_workflowindicator",
-      "community": 9,
-      "norm_label": "workflowindicator.tsx"
-    },
-    {
-      "label": "WorkflowIndicatorProps",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
-      "source_location": "L4",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_workflowindicator_workflowindicatorprops",
-      "community": 9,
-      "norm_label": "workflowindicatorprops"
-    },
-    {
-      "label": "WORKFLOW_STAGES",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
-      "source_location": "L8",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_workflowindicator_workflow_stages",
-      "community": 9,
-      "norm_label": "workflow_stages"
-    },
-    {
-      "label": "getActiveIndex()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
-      "source_location": "L16",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_workflowindicator_getactiveindex",
-      "community": 9,
-      "norm_label": "getactiveindex()"
-    },
-    {
-      "label": "WorkflowIndicator()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
-      "source_location": "L27",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_components_workflowindicator_workflowindicator",
-      "community": 9,
-      "norm_label": "workflowindicator()"
-    },
-    {
-      "label": "main.tsx",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/main.tsx",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_main",
-      "community": 0,
-      "norm_label": "main.tsx"
-    },
-    {
-      "label": "api.ts",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api",
-      "community": 1,
-      "norm_label": "api.ts"
-    },
-    {
-      "label": "ChatRequest",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.ts",
-      "source_location": "L13",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_chatrequest",
-      "community": 1,
-      "norm_label": "chatrequest"
-    },
-    {
-      "label": "ChatResponse",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.ts",
-      "source_location": "L17",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_chatresponse",
-      "community": 1,
-      "norm_label": "chatresponse"
-    },
-    {
-      "label": "ApiClientOptions",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.ts",
-      "source_location": "L21",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_apiclientoptions",
-      "community": 1,
-      "norm_label": "apiclientoptions"
-    },
-    {
-      "label": "ApiError",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.ts",
-      "source_location": "L26",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_apierror",
-      "community": 1,
-      "norm_label": "apierror"
-    },
-    {
-      "label": ".constructor()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.ts",
-      "source_location": "L29",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_apierror_constructor",
-      "community": 1,
-      "norm_label": ".constructor()"
-    },
-    {
-      "label": "getApiBaseUrl()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.ts",
-      "source_location": "L44",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_getapibaseurl",
-      "community": 1,
-      "norm_label": "getapibaseurl()"
-    },
-    {
-      "label": "buildEndpointUrl()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.ts",
-      "source_location": "L55",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_buildendpointurl",
-      "community": 1,
-      "norm_label": "buildendpointurl()"
-    },
-    {
-      "label": "parseSseEventBlock()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.ts",
-      "source_location": "L64",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_parsesseeventblock",
-      "community": 1,
-      "norm_label": "parsesseeventblock()"
-    },
-    {
-      "label": "sendChatMessage()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.ts",
-      "source_location": "L90",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_sendchatmessage",
-      "community": 1,
-      "norm_label": "sendchatmessage()"
-    },
-    {
-      "label": "streamChatMessage()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.ts",
-      "source_location": "L260",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_streamchatmessage",
-      "community": 1,
-      "norm_label": "streamchatmessage()"
-    },
-    {
-      "label": "api.validation.ts",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.validation.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_validation",
-      "community": 1,
-      "norm_label": "api.validation.ts"
-    },
-    {
-      "label": "assert()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.validation.ts",
-      "source_location": "L11",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_validation_assert",
-      "community": 1,
-      "norm_label": "assert()"
-    },
-    {
-      "label": "runApiValidations()",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/src/services/api.validation.ts",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "jarvis_frontend_src_services_api_validation_runapivalidations",
-      "community": 1,
-      "norm_label": "runapivalidations()"
-    },
-    {
-      "label": "vite.config.ts",
-      "file_type": "code",
-      "source_file": "jarvis-frontend/vite.config.ts",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "jarvis_frontend_vite_config",
-      "community": 17,
-      "norm_label": "vite.config.ts"
+      "id": "jarvis_frontend_src_app_app",
+      "community": 11,
+      "norm_label": "app()"
     }
   ],
   "links": [
@@ -1331,9 +1331,9 @@
       "source_file": "jarvis-backend/app/__init__.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_init_rationale_1",
-      "target": "jarvis_backend_app_init",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_init"
     },
     {
       "relation": "rationale_for",
@@ -1341,9 +1341,19 @@
       "source_file": "jarvis-backend/app/ai/__init__.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_init_rationale_1",
-      "target": "jarvis_backend_app_ai_init",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_init"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "jarvis-backend/app/ai/gemini_service.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jarvis_backend_app_ai_gemini_service",
+      "target": "jarvis_backend_app_ai_gemini_service_geminiservice"
     },
     {
       "relation": "imports_from",
@@ -1352,19 +1362,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service",
-      "target": "jarvis_backend_app_config",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-backend/app/ai/gemini_service.py",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "jarvis_backend_app_ai_gemini_service",
-      "target": "jarvis_backend_app_ai_gemini_service_geminiservice",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_config"
     },
     {
       "relation": "rationale_for",
@@ -1372,9 +1372,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_rationale_1",
-      "target": "jarvis_backend_app_ai_gemini_service",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_gemini_service"
     },
     {
       "relation": "method",
@@ -1382,9 +1382,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_geminiservice",
-      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_generate_response",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_generate_response"
     },
     {
       "relation": "method",
@@ -1392,9 +1392,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_geminiservice",
-      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_init",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_init"
     },
     {
       "relation": "method",
@@ -1402,9 +1402,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_geminiservice",
-      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_response_text",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_response_text"
     },
     {
       "relation": "method",
@@ -1412,9 +1412,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_geminiservice",
-      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_stream_response",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_stream_response"
     },
     {
       "relation": "uses",
@@ -1422,9 +1422,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L8",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "jarvis_backend_app_ai_gemini_service_geminiservice",
-      "target": "jarvis_backend_app_ai_provider_aiprovider",
-      "confidence_score": 0.5
+      "target": "jarvis_backend_app_ai_provider_aiprovider"
     },
     {
       "relation": "rationale_for",
@@ -1432,9 +1432,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_rationale_13",
-      "target": "jarvis_backend_app_ai_gemini_service_geminiservice",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_gemini_service_geminiservice"
     },
     {
       "relation": "calls",
@@ -1453,9 +1453,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_rationale_18",
-      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_init",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_init"
     },
     {
       "relation": "calls",
@@ -1464,9 +1464,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_geminiservice_generate_response",
-      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_response_text",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_response_text"
     },
     {
       "relation": "rationale_for",
@@ -1474,9 +1474,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_rationale_23",
-      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_generate_response",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_generate_response"
     },
     {
       "relation": "calls",
@@ -1485,9 +1485,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_geminiservice_stream_response",
-      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_response_text",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_response_text"
     },
     {
       "relation": "rationale_for",
@@ -1495,9 +1495,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_rationale_34",
-      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_stream_response",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_stream_response"
     },
     {
       "relation": "references",
@@ -1506,9 +1506,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L48",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_geminiservice_response_text",
-      "target": "any",
-      "confidence_score": 1.0
+      "target": "any"
     },
     {
       "relation": "rationale_for",
@@ -1516,9 +1516,9 @@
       "source_file": "jarvis-backend/app/ai/gemini_service.py",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_gemini_service_rationale_49",
-      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_response_text",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_gemini_service_geminiservice_response_text"
     },
     {
       "relation": "imports_from",
@@ -1527,9 +1527,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_provider",
-      "target": "abc",
-      "confidence_score": 1.0
+      "target": "abc"
     },
     {
       "relation": "contains",
@@ -1537,9 +1537,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_provider",
-      "target": "jarvis_backend_app_ai_provider_aiprovider",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_provider_aiprovider"
     },
     {
       "relation": "rationale_for",
@@ -1547,9 +1547,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_provider_rationale_1",
-      "target": "jarvis_backend_app_ai_provider",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_provider"
     },
     {
       "relation": "inherits",
@@ -1557,9 +1557,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_provider_aiprovider",
-      "target": "abc",
-      "confidence_score": 1.0
+      "target": "abc"
     },
     {
       "relation": "method",
@@ -1567,9 +1567,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_provider_aiprovider",
-      "target": "jarvis_backend_app_ai_provider_aiprovider_generate_response",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_provider_aiprovider_generate_response"
     },
     {
       "relation": "method",
@@ -1577,9 +1577,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_provider_aiprovider",
-      "target": "jarvis_backend_app_ai_provider_aiprovider_stream_response",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_provider_aiprovider_stream_response"
     },
     {
       "relation": "rationale_for",
@@ -1587,9 +1587,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_provider_rationale_8",
-      "target": "jarvis_backend_app_ai_provider_aiprovider",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_provider_aiprovider"
     },
     {
       "relation": "references",
@@ -1598,9 +1598,9 @@
       "source_file": "jarvis-backend/app/api/dependencies.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_dependencies_get_ai_provider",
-      "target": "jarvis_backend_app_ai_provider_aiprovider",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_provider_aiprovider"
     },
     {
       "relation": "rationale_for",
@@ -1608,9 +1608,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_provider_rationale_12",
-      "target": "jarvis_backend_app_ai_provider_aiprovider_generate_response",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_provider_aiprovider_generate_response"
     },
     {
       "relation": "rationale_for",
@@ -1618,9 +1618,9 @@
       "source_file": "jarvis-backend/app/ai/provider.py",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_ai_provider_rationale_16",
-      "target": "jarvis_backend_app_ai_provider_aiprovider_stream_response",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_ai_provider_aiprovider_stream_response"
     },
     {
       "relation": "rationale_for",
@@ -1628,9 +1628,9 @@
       "source_file": "jarvis-backend/app/api/__init__.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_init_rationale_1",
-      "target": "jarvis_backend_app_api_init",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_api_init"
     },
     {
       "relation": "contains",
@@ -1638,9 +1638,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat",
-      "target": "jarvis_backend_app_api_chat_create_chat_response",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_api_chat_create_chat_response"
     },
     {
       "relation": "contains",
@@ -1648,9 +1648,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat",
-      "target": "jarvis_backend_app_api_chat_format_sse_data",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_api_chat_format_sse_data"
     },
     {
       "relation": "contains",
@@ -1658,9 +1658,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat",
-      "target": "jarvis_backend_app_api_chat_stream_chat_response",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_api_chat_stream_chat_response"
     },
     {
       "relation": "rationale_for",
@@ -1668,9 +1668,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat_rationale_1",
-      "target": "jarvis_backend_app_api_chat",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_api_chat"
     },
     {
       "relation": "references",
@@ -1679,9 +1679,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat_create_chat_response",
-      "target": "aiproviderdependency",
-      "confidence_score": 1.0
+      "target": "aiproviderdependency"
     },
     {
       "relation": "references",
@@ -1690,9 +1690,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat_create_chat_response",
-      "target": "chatrequest",
-      "confidence_score": 1.0
+      "target": "chatrequest"
     },
     {
       "relation": "references",
@@ -1701,9 +1701,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat_create_chat_response",
-      "target": "chatresponse",
-      "confidence_score": 1.0
+      "target": "chatresponse"
     },
     {
       "relation": "rationale_for",
@@ -1711,9 +1711,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat_rationale_25",
-      "target": "jarvis_backend_app_api_chat_create_chat_response",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_api_chat_create_chat_response"
     },
     {
       "relation": "references",
@@ -1722,9 +1722,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat_stream_chat_response",
-      "target": "chatrequest",
-      "confidence_score": 1.0
+      "target": "chatrequest"
     },
     {
       "relation": "references",
@@ -1733,9 +1733,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat_stream_chat_response",
-      "target": "aiproviderdependency",
-      "confidence_score": 1.0
+      "target": "aiproviderdependency"
     },
     {
       "relation": "rationale_for",
@@ -1743,9 +1743,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat_rationale_42",
-      "target": "jarvis_backend_app_api_chat_stream_chat_response",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_api_chat_stream_chat_response"
     },
     {
       "relation": "references",
@@ -1754,9 +1754,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat_stream_chat_response",
-      "target": "streamingresponse",
-      "confidence_score": 1.0
+      "target": "streamingresponse"
     },
     {
       "relation": "rationale_for",
@@ -1764,9 +1764,9 @@
       "source_file": "jarvis-backend/app/api/chat.py",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_chat_rationale_71",
-      "target": "jarvis_backend_app_api_chat_format_sse_data",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_api_chat_format_sse_data"
     },
     {
       "relation": "contains",
@@ -1774,9 +1774,9 @@
       "source_file": "jarvis-backend/app/api/dependencies.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_dependencies",
-      "target": "jarvis_backend_app_api_dependencies_get_ai_provider",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_api_dependencies_get_ai_provider"
     },
     {
       "relation": "rationale_for",
@@ -1784,9 +1784,9 @@
       "source_file": "jarvis-backend/app/api/dependencies.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_dependencies_rationale_1",
-      "target": "jarvis_backend_app_api_dependencies",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_api_dependencies"
     },
     {
       "relation": "rationale_for",
@@ -1794,9 +1794,9 @@
       "source_file": "jarvis-backend/app/api/dependencies.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_api_dependencies_rationale_11",
-      "target": "jarvis_backend_app_api_dependencies_get_ai_provider",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_api_dependencies_get_ai_provider"
     },
     {
       "relation": "contains",
@@ -1804,9 +1804,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_config",
-      "target": "jarvis_backend_app_config_settings",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_config_settings"
     },
     {
       "relation": "rationale_for",
@@ -1814,9 +1814,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_config_rationale_1",
-      "target": "jarvis_backend_app_config",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_config"
     },
     {
       "relation": "rationale_for",
@@ -1824,9 +1824,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_config_rationale_19",
-      "target": "jarvis_backend_app_config_settings",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_config_settings"
     },
     {
       "relation": "method",
@@ -1834,9 +1834,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_config_settings",
-      "target": "jarvis_backend_app_config_settings_gemini_api_key",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_config_settings_gemini_api_key"
     },
     {
       "relation": "method",
@@ -1844,9 +1844,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_config_settings",
-      "target": "jarvis_backend_app_config_settings_init",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_config_settings_init"
     },
     {
       "relation": "rationale_for",
@@ -1854,9 +1854,9 @@
       "source_file": "jarvis-backend/app/config.py",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_config_rationale_26",
-      "target": "jarvis_backend_app_config_settings_gemini_api_key",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_config_settings_gemini_api_key"
     },
     {
       "relation": "contains",
@@ -1864,9 +1864,9 @@
       "source_file": "jarvis-backend/app/main.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_main",
-      "target": "jarvis_backend_app_main_health_check",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_main_health_check"
     },
     {
       "relation": "contains",
@@ -1874,9 +1874,9 @@
       "source_file": "jarvis-backend/app/main.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_main",
-      "target": "jarvis_backend_app_main_read_root",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_main_read_root"
     },
     {
       "relation": "rationale_for",
@@ -1884,9 +1884,9 @@
       "source_file": "jarvis-backend/app/main.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_main_rationale_1",
-      "target": "jarvis_backend_app_main",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_main"
     },
     {
       "relation": "rationale_for",
@@ -1894,9 +1894,9 @@
       "source_file": "jarvis-backend/app/main.py",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_main_rationale_29",
-      "target": "jarvis_backend_app_main_read_root",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_main_read_root"
     },
     {
       "relation": "rationale_for",
@@ -1904,9 +1904,9 @@
       "source_file": "jarvis-backend/app/main.py",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_main_rationale_39",
-      "target": "jarvis_backend_app_main_health_check",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_main_health_check"
     },
     {
       "relation": "rationale_for",
@@ -1914,9 +1914,9 @@
       "source_file": "jarvis-backend/app/models/__init__.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_models_init_rationale_1",
-      "target": "jarvis_backend_app_models_init",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_models_init"
     },
     {
       "relation": "contains",
@@ -1924,9 +1924,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_models_chat_models",
-      "target": "jarvis_backend_app_models_chat_models_chatrequest",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_models_chat_models_chatrequest"
     },
     {
       "relation": "contains",
@@ -1934,9 +1934,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_models_chat_models",
-      "target": "jarvis_backend_app_models_chat_models_chatresponse",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_models_chat_models_chatresponse"
     },
     {
       "relation": "rationale_for",
@@ -1944,9 +1944,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_models_chat_models_rationale_1",
-      "target": "jarvis_backend_app_models_chat_models",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_models_chat_models"
     },
     {
       "relation": "inherits",
@@ -1954,9 +1954,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_models_chat_models_chatrequest",
-      "target": "basemodel",
-      "confidence_score": 1.0
+      "target": "basemodel"
     },
     {
       "relation": "rationale_for",
@@ -1964,9 +1964,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_models_chat_models_rationale_20",
-      "target": "jarvis_backend_app_models_chat_models_chatrequest",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_models_chat_models_chatrequest"
     },
     {
       "relation": "inherits",
@@ -1974,9 +1974,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_models_chat_models_chatresponse",
-      "target": "basemodel",
-      "confidence_score": 1.0
+      "target": "basemodel"
     },
     {
       "relation": "rationale_for",
@@ -1984,9 +1984,9 @@
       "source_file": "jarvis-backend/app/models/chat_models.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_models_chat_models_rationale_38",
-      "target": "jarvis_backend_app_models_chat_models_chatresponse",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_models_chat_models_chatresponse"
     },
     {
       "relation": "rationale_for",
@@ -1994,9 +1994,9 @@
       "source_file": "jarvis-backend/app/services/__init__.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_services_init_rationale_1",
-      "target": "jarvis_backend_app_services_init",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_services_init"
     },
     {
       "relation": "rationale_for",
@@ -2004,195 +2004,9 @@
       "source_file": "jarvis-backend/app/utils/__init__.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_backend_app_utils_init_rationale_1",
-      "target": "jarvis_backend_app_utils_init",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_app_app",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_activitypanel",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L11",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_activitypanel_activitypanel",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_backgrounddepth",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_chatdrawer",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_chatdrawer_chatmessage",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L8",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_commandbar",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_hudheader",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_hudheader_hudheader",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_particleblob",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_scifioverlay",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_stateselector",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_stateselector_stateselector",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/App.tsx",
-      "source_location": "L10",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_app",
-      "target": "jarvis_frontend_src_components_workflowindicator",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/main.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_main",
-      "target": "jarvis_frontend_src_app",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "jarvis-frontend/src/main.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "jarvis_frontend_src_main",
-      "target": "jarvis_frontend_src_app_app",
-      "confidence_score": 1.0
+      "target": "jarvis_backend_app_utils_init"
     },
     {
       "relation": "contains",
@@ -2200,9 +2014,9 @@
       "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_activitypanel",
-      "target": "jarvis_frontend_src_components_activitypanel_activityitem",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_activitypanel_activityitem"
     },
     {
       "relation": "contains",
@@ -2210,9 +2024,9 @@
       "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_activitypanel",
-      "target": "jarvis_frontend_src_components_activitypanel_activitypanel",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_activitypanel_activitypanel"
     },
     {
       "relation": "contains",
@@ -2220,9 +2034,9 @@
       "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_activitypanel",
-      "target": "jarvis_frontend_src_components_activitypanel_activitypanelprops",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_activitypanel_activitypanelprops"
     },
     {
       "relation": "contains",
@@ -2230,9 +2044,9 @@
       "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_activitypanel",
-      "target": "jarvis_frontend_src_components_activitypanel_state_activities",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_activitypanel_state_activities"
     },
     {
       "relation": "imports_from",
@@ -2241,9 +2055,9 @@
       "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_activitypanel",
-      "target": "jarvis_frontend_src_components_particleblob",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob"
     },
     {
       "relation": "imports",
@@ -2252,9 +2066,9 @@
       "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_activitypanel",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "references",
@@ -2263,9 +2077,9 @@
       "source_file": "jarvis-frontend/src/components/ActivityPanel.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_activitypanel_activitypanelprops",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "contains",
@@ -2273,9 +2087,9 @@
       "source_file": "jarvis-frontend/src/components/BackgroundDepth.tsx",
       "source_location": "L68",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_backgrounddepth",
-      "target": "jarvis_frontend_src_components_backgrounddepth_backgrounddepth",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_backgrounddepth_backgrounddepth"
     },
     {
       "relation": "contains",
@@ -2283,9 +2097,9 @@
       "source_file": "jarvis-frontend/src/components/BackgroundDepth.tsx",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_backgrounddepth",
-      "target": "jarvis_frontend_src_components_backgrounddepth_floatingdust",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_backgrounddepth_floatingdust"
     },
     {
       "relation": "contains",
@@ -2293,9 +2107,9 @@
       "source_file": "jarvis-frontend/src/components/BackgroundDepth.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_backgrounddepth",
-      "target": "jarvis_frontend_src_components_backgrounddepth_starfield",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_backgrounddepth_starfield"
     },
     {
       "relation": "contains",
@@ -2303,9 +2117,9 @@
       "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_chatdrawer",
-      "target": "jarvis_frontend_src_components_chatdrawer_chatdrawer",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_chatdrawer_chatdrawer"
     },
     {
       "relation": "contains",
@@ -2313,9 +2127,9 @@
       "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_chatdrawer",
-      "target": "jarvis_frontend_src_components_chatdrawer_chatdrawerprops",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_chatdrawer_chatdrawerprops"
     },
     {
       "relation": "contains",
@@ -2323,9 +2137,9 @@
       "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_chatdrawer",
-      "target": "jarvis_frontend_src_components_chatdrawer_chatmessage",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_chatdrawer_chatmessage"
     },
     {
       "relation": "contains",
@@ -2333,9 +2147,9 @@
       "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_chatdrawer",
-      "target": "jarvis_frontend_src_components_chatdrawer_messagebubble",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_chatdrawer_messagebubble"
     },
     {
       "relation": "contains",
@@ -2343,9 +2157,9 @@
       "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_chatdrawer",
-      "target": "jarvis_frontend_src_components_chatdrawer_rendermessagecontent",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_chatdrawer_rendermessagecontent"
     },
     {
       "relation": "calls",
@@ -2354,9 +2168,9 @@
       "source_file": "jarvis-frontend/src/components/ChatDrawer.tsx",
       "source_location": "L82",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_chatdrawer_messagebubble",
-      "target": "jarvis_frontend_src_components_chatdrawer_rendermessagecontent",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_chatdrawer_rendermessagecontent"
     },
     {
       "relation": "contains",
@@ -2364,9 +2178,9 @@
       "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_commandbar",
-      "target": "jarvis_frontend_src_components_commandbar_action_chips",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_commandbar_action_chips"
     },
     {
       "relation": "contains",
@@ -2374,9 +2188,9 @@
       "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_commandbar",
-      "target": "jarvis_frontend_src_components_commandbar_commandbar",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_commandbar_commandbar"
     },
     {
       "relation": "contains",
@@ -2384,9 +2198,9 @@
       "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_commandbar",
-      "target": "jarvis_frontend_src_components_commandbar_commandbarprops",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_commandbar_commandbarprops"
     },
     {
       "relation": "imports_from",
@@ -2395,9 +2209,9 @@
       "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_commandbar",
-      "target": "jarvis_frontend_src_components_particleblob",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob"
     },
     {
       "relation": "imports",
@@ -2406,9 +2220,9 @@
       "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_commandbar",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "references",
@@ -2417,9 +2231,9 @@
       "source_file": "jarvis-frontend/src/components/CommandBar.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_commandbar_commandbarprops",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "contains",
@@ -2427,9 +2241,9 @@
       "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_hudheader",
-      "target": "jarvis_frontend_src_components_hudheader_hudheader",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_hudheader_hudheader"
     },
     {
       "relation": "contains",
@@ -2437,9 +2251,9 @@
       "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_hudheader",
-      "target": "jarvis_frontend_src_components_hudheader_hudheaderprops",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_hudheader_hudheaderprops"
     },
     {
       "relation": "contains",
@@ -2447,9 +2261,9 @@
       "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_hudheader",
-      "target": "jarvis_frontend_src_components_hudheader_state_colors",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_hudheader_state_colors"
     },
     {
       "relation": "contains",
@@ -2457,9 +2271,9 @@
       "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_hudheader",
-      "target": "jarvis_frontend_src_components_hudheader_state_labels",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_hudheader_state_labels"
     },
     {
       "relation": "imports_from",
@@ -2468,9 +2282,9 @@
       "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_hudheader",
-      "target": "jarvis_frontend_src_components_particleblob",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob"
     },
     {
       "relation": "imports",
@@ -2479,9 +2293,9 @@
       "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_hudheader",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "references",
@@ -2490,9 +2304,9 @@
       "source_file": "jarvis-frontend/src/components/HUDHeader.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_hudheader_hudheaderprops",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "contains",
@@ -2500,9 +2314,9 @@
       "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_particleblob",
-      "target": "jarvis_frontend_src_components_particleblob_fibonaccisphere",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_fibonaccisphere"
     },
     {
       "relation": "contains",
@@ -2510,9 +2324,9 @@
       "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_particleblob",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "contains",
@@ -2520,9 +2334,9 @@
       "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
       "source_location": "L268",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_particleblob",
-      "target": "jarvis_frontend_src_components_particleblob_particleblob",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_particleblob"
     },
     {
       "relation": "contains",
@@ -2530,9 +2344,9 @@
       "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
       "source_location": "L264",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_particleblob",
-      "target": "jarvis_frontend_src_components_particleblob_particleblobprops",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_particleblobprops"
     },
     {
       "relation": "contains",
@@ -2540,9 +2354,9 @@
       "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_particleblob",
-      "target": "jarvis_frontend_src_components_particleblob_particles",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_particles"
     },
     {
       "relation": "contains",
@@ -2550,9 +2364,9 @@
       "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
       "source_location": "L108",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_particleblob",
-      "target": "jarvis_frontend_src_components_particleblob_particlesprops",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_particlesprops"
     },
     {
       "relation": "contains",
@@ -2560,9 +2374,9 @@
       "source_file": "jarvis-frontend/src/components/ParticleBlob.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_particleblob",
-      "target": "jarvis_frontend_src_components_particleblob_state_config",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_state_config"
     },
     {
       "relation": "imports_from",
@@ -2571,9 +2385,9 @@
       "source_file": "jarvis-frontend/src/components/SciFiOverlay.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_scifioverlay",
-      "target": "jarvis_frontend_src_components_particleblob",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob"
     },
     {
       "relation": "re_exports",
@@ -2582,9 +2396,9 @@
       "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_stateselector",
-      "target": "jarvis_frontend_src_components_particleblob",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob"
     },
     {
       "relation": "imports_from",
@@ -2593,9 +2407,9 @@
       "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_workflowindicator",
-      "target": "jarvis_frontend_src_components_particleblob",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob"
     },
     {
       "relation": "imports",
@@ -2604,9 +2418,9 @@
       "source_file": "jarvis-frontend/src/components/SciFiOverlay.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_scifioverlay",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "references",
@@ -2615,9 +2429,9 @@
       "source_file": "jarvis-frontend/src/components/SciFiOverlay.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_scifioverlay_scifioverlayprops",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "imports",
@@ -2626,9 +2440,9 @@
       "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_stateselector",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "references",
@@ -2637,9 +2451,9 @@
       "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_stateselector_stateselectorprops",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "imports",
@@ -2648,9 +2462,9 @@
       "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_workflowindicator",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "references",
@@ -2659,9 +2473,9 @@
       "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_workflowindicator_workflowindicatorprops",
-      "target": "jarvis_frontend_src_components_particleblob_orbstate",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_particleblob_orbstate"
     },
     {
       "relation": "contains",
@@ -2669,9 +2483,9 @@
       "source_file": "jarvis-frontend/src/components/SciFiOverlay.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_scifioverlay",
-      "target": "jarvis_frontend_src_components_scifioverlay_scifioverlay",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_scifioverlay_scifioverlay"
     },
     {
       "relation": "contains",
@@ -2679,9 +2493,9 @@
       "source_file": "jarvis-frontend/src/components/SciFiOverlay.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_scifioverlay",
-      "target": "jarvis_frontend_src_components_scifioverlay_scifioverlayprops",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_scifioverlay_scifioverlayprops"
     },
     {
       "relation": "contains",
@@ -2689,9 +2503,9 @@
       "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_stateselector",
-      "target": "jarvis_frontend_src_components_stateselector_states",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_stateselector_states"
     },
     {
       "relation": "contains",
@@ -2699,9 +2513,9 @@
       "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_stateselector",
-      "target": "jarvis_frontend_src_components_stateselector_stateselector",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_stateselector_stateselector"
     },
     {
       "relation": "contains",
@@ -2709,9 +2523,9 @@
       "source_file": "jarvis-frontend/src/components/StateSelector.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_stateselector",
-      "target": "jarvis_frontend_src_components_stateselector_stateselectorprops",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_stateselector_stateselectorprops"
     },
     {
       "relation": "contains",
@@ -2719,9 +2533,9 @@
       "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_workflowindicator",
-      "target": "jarvis_frontend_src_components_workflowindicator_getactiveindex",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_workflowindicator_getactiveindex"
     },
     {
       "relation": "contains",
@@ -2729,9 +2543,9 @@
       "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_workflowindicator",
-      "target": "jarvis_frontend_src_components_workflowindicator_workflow_stages",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_workflowindicator_workflow_stages"
     },
     {
       "relation": "contains",
@@ -2739,9 +2553,9 @@
       "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_workflowindicator",
-      "target": "jarvis_frontend_src_components_workflowindicator_workflowindicator",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_workflowindicator_workflowindicator"
     },
     {
       "relation": "contains",
@@ -2749,9 +2563,9 @@
       "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_workflowindicator",
-      "target": "jarvis_frontend_src_components_workflowindicator_workflowindicatorprops",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_workflowindicator_workflowindicatorprops"
     },
     {
       "relation": "calls",
@@ -2760,9 +2574,31 @@
       "source_file": "jarvis-frontend/src/components/WorkflowIndicator.tsx",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_components_workflowindicator_workflowindicator",
-      "target": "jarvis_frontend_src_components_workflowindicator_getactiveindex",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_components_workflowindicator_getactiveindex"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "jarvis-frontend/src/main.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jarvis_frontend_src_main",
+      "target": "jarvis_frontend_src_app"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "jarvis-frontend/src/main.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "jarvis_frontend_src_main",
+      "target": "jarvis_frontend_src_app_app"
     },
     {
       "relation": "contains",
@@ -2770,9 +2606,9 @@
       "source_file": "jarvis-frontend/src/services/api.ts",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api",
-      "target": "jarvis_frontend_src_services_api_apiclientoptions",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_apiclientoptions"
     },
     {
       "relation": "contains",
@@ -2780,9 +2616,9 @@
       "source_file": "jarvis-frontend/src/services/api.ts",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api",
-      "target": "jarvis_frontend_src_services_api_apierror",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_apierror"
     },
     {
       "relation": "contains",
@@ -2790,9 +2626,9 @@
       "source_file": "jarvis-frontend/src/services/api.ts",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api",
-      "target": "jarvis_frontend_src_services_api_buildendpointurl",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_buildendpointurl"
     },
     {
       "relation": "contains",
@@ -2800,9 +2636,9 @@
       "source_file": "jarvis-frontend/src/services/api.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api",
-      "target": "jarvis_frontend_src_services_api_chatrequest",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_chatrequest"
     },
     {
       "relation": "contains",
@@ -2810,9 +2646,9 @@
       "source_file": "jarvis-frontend/src/services/api.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api",
-      "target": "jarvis_frontend_src_services_api_chatresponse",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_chatresponse"
     },
     {
       "relation": "contains",
@@ -2820,9 +2656,9 @@
       "source_file": "jarvis-frontend/src/services/api.ts",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api",
-      "target": "jarvis_frontend_src_services_api_getapibaseurl",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_getapibaseurl"
     },
     {
       "relation": "contains",
@@ -2830,9 +2666,9 @@
       "source_file": "jarvis-frontend/src/services/api.ts",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api",
-      "target": "jarvis_frontend_src_services_api_parsesseeventblock",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_parsesseeventblock"
     },
     {
       "relation": "contains",
@@ -2840,9 +2676,9 @@
       "source_file": "jarvis-frontend/src/services/api.ts",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api",
-      "target": "jarvis_frontend_src_services_api_sendchatmessage",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_sendchatmessage"
     },
     {
       "relation": "contains",
@@ -2850,9 +2686,9 @@
       "source_file": "jarvis-frontend/src/services/api.ts",
       "source_location": "L260",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api",
-      "target": "jarvis_frontend_src_services_api_streamchatmessage",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_streamchatmessage"
     },
     {
       "relation": "imports_from",
@@ -2861,9 +2697,9 @@
       "source_file": "jarvis-frontend/src/services/api.validation.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api_validation",
-      "target": "jarvis_frontend_src_services_api",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api"
     },
     {
       "relation": "method",
@@ -2871,9 +2707,9 @@
       "source_file": "jarvis-frontend/src/services/api.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api_apierror",
-      "target": "jarvis_frontend_src_services_api_apierror_constructor",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_apierror_constructor"
     },
     {
       "relation": "imports",
@@ -2882,9 +2718,9 @@
       "source_file": "jarvis-frontend/src/services/api.validation.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api_validation",
-      "target": "jarvis_frontend_src_services_api_apierror",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_apierror"
     },
     {
       "relation": "calls",
@@ -2893,9 +2729,9 @@
       "source_file": "jarvis-frontend/src/services/api.ts",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api_sendchatmessage",
-      "target": "jarvis_frontend_src_services_api_getapibaseurl",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_getapibaseurl"
     },
     {
       "relation": "imports",
@@ -2904,9 +2740,9 @@
       "source_file": "jarvis-frontend/src/services/api.validation.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api_validation",
-      "target": "jarvis_frontend_src_services_api_getapibaseurl",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_getapibaseurl"
     },
     {
       "relation": "calls",
@@ -2926,9 +2762,9 @@
       "source_file": "jarvis-frontend/src/services/api.ts",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api_sendchatmessage",
-      "target": "jarvis_frontend_src_services_api_buildendpointurl",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_buildendpointurl"
     },
     {
       "relation": "imports",
@@ -2937,9 +2773,9 @@
       "source_file": "jarvis-frontend/src/services/api.validation.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api_validation",
-      "target": "jarvis_frontend_src_services_api_parsesseeventblock",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_parsesseeventblock"
     },
     {
       "relation": "calls",
@@ -2959,9 +2795,9 @@
       "source_file": "jarvis-frontend/src/services/api.validation.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api_validation",
-      "target": "jarvis_frontend_src_services_api_sendchatmessage",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_sendchatmessage"
     },
     {
       "relation": "calls",
@@ -2981,9 +2817,9 @@
       "source_file": "jarvis-frontend/src/services/api.validation.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api_validation",
-      "target": "jarvis_frontend_src_services_api_streamchatmessage",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_streamchatmessage"
     },
     {
       "relation": "calls",
@@ -3002,9 +2838,9 @@
       "source_file": "jarvis-frontend/src/services/api.validation.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api_validation",
-      "target": "jarvis_frontend_src_services_api_validation_assert",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_validation_assert"
     },
     {
       "relation": "contains",
@@ -3012,9 +2848,9 @@
       "source_file": "jarvis-frontend/src/services/api.validation.ts",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api_validation",
-      "target": "jarvis_frontend_src_services_api_validation_runapivalidations",
-      "confidence_score": 1.0
+      "target": "jarvis_frontend_src_services_api_validation_runapivalidations"
     },
     {
       "relation": "calls",
@@ -3023,11 +2859,21 @@
       "source_file": "jarvis-frontend/src/services/api.validation.ts",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "jarvis_frontend_src_services_api_validation_runapivalidations",
-      "target": "jarvis_frontend_src_services_api_validation_assert",
+      "target": "jarvis_frontend_src_services_api_validation_assert"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "jarvis-frontend/src/App.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "jarvis_frontend_src_app",
+      "target": "jarvis_frontend_src_app_app",
       "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c211bb49a10cae440154314ea7461ece1acf0b76"
+  "built_at_commit": "5e5d30c4fa7d3551d52be8731aa29d20620980bc"
 }
