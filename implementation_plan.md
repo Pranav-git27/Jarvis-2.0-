@@ -75,6 +75,13 @@ This plan outlines the architecture and step-by-step roadmap to complete all rem
 - Added loading state guard (`isLoading`) to prevent accidental duplicate submissions.
 - Added graceful error display handling in the conversation drawer.
 
+#### [MODIFY] [COMPLETED CHUNK 9] Frontend — `d:\JARVIS 2.0\jarvis-frontend\src\App.tsx` Streaming Integration
+- Replaced non-streaming call with `sendChatStream()` from `api.ts` targeting `POST /api/chat/stream`.
+- Visual token-by-token incremental rendering within single assistant message bubble with blinking cursor.
+- Integrated dynamic orb state transitions: `idle → thinking` (request) $\rightarrow$ `speaking` (streaming chunks) $\rightarrow$ `completed` (finished) $\rightarrow$ `idle` (2s delay).
+- Implemented robust error handling for pre-stream and mid-stream interruptions without leaking backend internals.
+- Fully verified in actual browser with consecutive test queries and zero console errors.
+
 #### [REMOVE] Frontend — Gemini key & `gemini.ts`
 - Delete `src/services/gemini.ts` if present; the frontend must not hold an API key.
 - No `VITE_GEMINI_API_KEY` anywhere; the frontend `.env` (if any) must contain no secrets.
