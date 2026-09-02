@@ -9,7 +9,7 @@ import CommandBar from './components/CommandBar';
 import ChatDrawer, { type ChatMessage } from './components/ChatDrawer';
 import WorkflowIndicator from './components/WorkflowIndicator';
 import ActivityPanel from './components/ActivityPanel';
-import { sendChatMessage } from './services/api';
+import { sendChatStream } from './services/api';
 import './App.css';
 
 function App() {
@@ -36,28 +36,50 @@ function App() {
       timestamp: timeStr,
     };
 
-    setMessages((prev) => [...prev, userMsg]);
+    const assistantId = `jarvis-${Date.now()}`;
+    const assistantMsg: ChatMessage = {
+      id: assistantId,
+      sender: 'jarvis',
+      text: '',
+      timestamp: timeStr,
+      isStreaming: true,
+    };
+
+    setMessages((prev) => [...prev, userMsg, assistantMsg]);
     setIsChatOpen(true);
     setIsLoading(true);
 
-    // Transition through states: thinking while API request is in-flight
+    // Initial state: thinking while waiting for stream connection
     setOrbState('thinking');
 
+    let hasReceivedChunk = false;
+
     try {
-      const responseData = await sendChatMessage({ message: text });
-      setOrbState('speaking');
+      for await (const chunk of sendChatStream({ message: text })) {
+        if (!hasReceivedChunk) {
+          hasReceivedChunk = true;
+          setOrbState('speaking');
+        }
 
-      const jarvisMsg: ChatMessage = {
-        id: `jarvis-${Date.now()}`,
-        sender: 'jarvis',
-        text: responseData.response,
-        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-        isStreaming: false,
-      };
+        setMessages((prev) =>
+          prev.map((msg) =>
+            msg.id === assistantId
+              ? { ...msg, text: msg.text + chunk }
+              : msg
+          )
+        );
+      }
 
-      setMessages((prev) => [...prev, jarvisMsg]);
+      // Finalize assistant message
+      setMessages((prev) =>
+        prev.map((msg) =>
+          msg.id === assistantId
+            ? { ...msg, isStreaming: false }
+            : msg
+        )
+      );
+
       setOrbState('completed');
-
       setTimeout(() => {
         setOrbState('idle');
       }, 2000);
@@ -65,15 +87,37 @@ function App() {
       const errorMessage =
         error instanceof Error ? error.message : 'Communication error with JARVIS backend.';
 
-      const jarvisErrorMsg: ChatMessage = {
-        id: `jarvis-err-${Date.now()}`,
-        sender: 'jarvis',
-        text: `[SYSTEM ALERT] ${errorMessage}`,
-        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
-        isStreaming: false,
-      };
+      if (!hasReceivedChunk) {
+        // No data received: replace the empty placeholder with a user-friendly system alert
+        setMessages((prev) =>
+          prev.map((msg) =>
+            msg.id === assistantId
+              ? {
+                  ...msg,
+                  text: `[SYSTEM ALERT] ${errorMessage}`,
+                  isStreaming: false,
+                }
+              : msg
+          )
+        );
+      } else {
+        // Partial data received: preserve partial response, finalize it, and append error notification
+        setMessages((prev) => [
+          ...prev.map((msg) =>
+            msg.id === assistantId
+              ? { ...msg, isStreaming: false }
+              : msg
+          ),
+          {
+            id: `jarvis-err-${Date.now()}`,
+            sender: 'jarvis',
+            text: `[SYSTEM ALERT] Stream interrupted: ${errorMessage}`,
+            timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+            isStreaming: false,
+          },
+        ]);
+      }
 
-      setMessages((prev) => [...prev, jarvisErrorMsg]);
       setOrbState('idle');
     } finally {
       setIsLoading(false);
