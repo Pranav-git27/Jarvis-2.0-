@@ -17,7 +17,7 @@ A premium 3D interactive AI Operating System UI with particle orb, sci-fi HUD gl
 | **Typography** | Orbitron, Rajdhani, JetBrains Mono, Inter (Google Fonts) | ✅ Done |
 | **Animations** | CSS Glassmorphism + R3F lerping + GPU-accelerated keyframes | ✅ Done |
 | **Styling** | Custom Sci-Fi CSS Design Tokens + CSS Variables | ✅ Done |
-| **AI** | Gemini API (Flash free tier) | 🟡 Non-Streaming Connected (Chunk 8) |
+| **AI** | Gemini API (Flash free tier) | ✅ Streaming Connected (Chunk 9) |
 | **TTS** | Pocket TTS (Python FastAPI backend) | 🔲 Pending |
 | **STT** | Web Speech API (browser-native) | 🔲 Pending |
 
@@ -134,6 +134,13 @@ D:\JARVIS 2.0\
 - **Orb State Lifecycle**: Automatically transitions `idle → thinking → speaking → completed → idle` around backend requests.
 - **Submission Guard**: Prevents accidental duplicate submissions while `isLoading` / `orbState === 'thinking'`.
 - **Graceful Error Alerts**: Catches API/network errors and presents user-friendly alert messages in transcript drawer without exposing raw stack traces.
+
+### 12. Chat UI Streaming Integration (`src/App.tsx`) — Completed Chunk 9
+- **Incremental Streaming**: Connected `handleSendMessage` in `App.tsx` to `sendChatStream()` yielding SSE chunks from `POST /api/chat/stream`.
+- **Progressive UI Updates**: Response text is updated incrementally into a single assistant message card with active streaming cursor.
+- **Dynamic State Transitions**: Drives `idle → thinking` (stream start) $\rightarrow$ `speaking` (on first chunk received) $\rightarrow$ `completed` (stream close) $\rightarrow$ `idle` (after 2s delay).
+- **Error Protection**: Gracefully removes/replaces empty placeholder if connection fails early; preserves partial response with system alert if interrupted mid-stream.
+- **Strict Architecture**: Zero backend modifications required; zero direct Gemini browser requests; API key remains secured on backend only.
 
 ---
 
