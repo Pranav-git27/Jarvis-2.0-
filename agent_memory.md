@@ -19,7 +19,7 @@ A premium 3D interactive AI Operating System UI with particle orb, sci-fi HUD gl
 | **Styling** | Custom Sci-Fi CSS Design Tokens + CSS Variables | ✅ Done |
 | **AI** | Gemini API (Flash free tier) | ✅ Streaming Connected (Chunk 9) |
 | **TTS** | Pocket TTS (Python FastAPI backend) | 🔲 Pending |
-| **STT** | Web Speech API (browser-native) | 🔲 Pending |
+| **STT** | Web Speech API (browser-native) | ✅ Hook Created (Chunk 10) — UI integration pending |
 
 ---
 
@@ -43,6 +43,8 @@ D:\JARVIS 2.0\
 │   │   ├── services/
 │   │   │   ├── api.ts            # Frontend API client for /api/chat & /api/chat/stream
 │   │   │   └── api.validation.ts # Independent validation suite for API client
+│   │   ├── hooks/
+│   │   │   └── useSpeechRecognition.ts  # Browser-native STT hook (Chunk 10)
 │   │   ├── App.tsx               # Integrated state & message management
 │   │   ├── App.css
 │   │   ├── index.css             # Design tokens, animations, glassmorphism
@@ -142,6 +144,14 @@ D:\JARVIS 2.0\
 - **Error Protection**: Gracefully removes/replaces empty placeholder if connection fails early; preserves partial response with system alert if interrupted mid-stream.
 - **Strict Architecture**: Zero backend modifications required; zero direct Gemini browser requests; API key remains secured on backend only.
 
+### 13. Speech Recognition Hook (`src/hooks/useSpeechRecognition.ts`) — Completed Chunk 10
+- **Reusable STT Hook**: Browser-native Web Speech API wrapper (`SpeechRecognition` with `webkitSpeechRecognition` fallback). No third-party packages; no backend/API/Gemini interaction.
+- **Minimal Interface**: `transcript`, `isListening`, `startListening`, `stopListening`, `isSupported`, `error`.
+- **Session Semantics**: Interim + final results; transcript accumulates confirmed finals plus current interim, settles to finals on end, resets per session; engine auto-restarts after recognition ends while the session remains active.
+- **Robustness**: Safe repeated start/stop, cleanup on unmount, no stale closures (refs + state setters only), user-friendly error messages for known recognition error codes.
+- **Validation**: `npm run build` (tsc -b + vite) and `npm run lint` (oxlint) both pass with zero errors.
+- **Not Yet Done**: UI integration (CommandBar mic binding, live transcript rendering, orb-state `listening` transitions, auto-submit) — planned for Chunks 11–12.
+
 ---
 
 ## Design System
@@ -185,6 +195,6 @@ npm run dev
 ## Next Steps
 1. Integrate Gemini API for real AI responses
 2. Build Python FastAPI backend for TTS
-3. Integrate Web Speech API for STT
+3. Integrate STT hook into CommandBar & voice command flow (Chunks 11–12)
 4. Add sound effects for state transitions
 5. Implement persistent conversation history

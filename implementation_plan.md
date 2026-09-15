@@ -96,14 +96,22 @@ This plan outlines the architecture and step-by-step roadmap to complete all rem
 
 ### Phase 2: Native Web Speech API STT (Voice Input)
 
-#### [NEW] [d:\JARVIS 2.0\jarvis-frontend\src\hooks\useSpeechRecognition.ts](file:///d:/JARVIS%202.0/jarvis-frontend/src/hooks/useSpeechRecognition.ts)
-- React hook wrapping browser `webkitSpeechRecognition` / `SpeechRecognition`.
-- Continuous voice listening toggle, speech silence detection, and auto-submit on pause.
-- Automatically transitions orb state to `listening` while user speaks.
+#### [NEW] [COMPLETED CHUNK 10] Frontend — STT Hook (`d:\JARVIS 2.0\jarvis-frontend\src\hooks\useSpeechRecognition.ts`)
+- Reusable, UI-agnostic React hook wrapping browser `SpeechRecognition` with `webkitSpeechRecognition` fallback. Implemented and validated.
+- Minimal interface: `transcript`, `isListening`, `startListening`, `stopListening`, `isSupported`, `error`.
+- Handles start/result/error/end events; supports interim + final results; accumulates the session transcript; safe repeated start/stop; cleanup on unmount; no stale closures.
+- No third-party packages; no backend/API/Gemini interaction. Minimal internal Web Speech API typings (project DOM typings lack them).
+- Validated: `npm run build` (tsc -b + vite) and `npm run lint` (oxlint) pass with zero errors.
+- Deferred to Chunks 11–12: silence detection, auto-submit on pause, orb-state `listening` transitions, UI integration.
 
-#### [MODIFY] [d:\JARVIS 2.0\jarvis-frontend\src\components\CommandBar.tsx](file:///d:/JARVIS%202.0/jarvis-frontend/src/components/CommandBar.tsx)
+#### [MODIFY] [PLANNED CHUNK 11] Frontend — `d:\JARVIS 2.0\jarvis-frontend\src\components\CommandBar.tsx`
 - Bind microphone toggle button to `useSpeechRecognition` hook.
 - Render live audio transcript into input bar in real time.
+
+#### [MODIFY] [PLANNED CHUNK 12] Frontend — Voice Command Flow (`src/App.tsx` + hook wiring)
+- Wire recognized voice input into the existing `handleSendMessage` flow.
+- Add speech silence detection and auto-submit on pause.
+- End-to-end browser verification of the full voice → JARVIS response loop.
 
 ---
 
