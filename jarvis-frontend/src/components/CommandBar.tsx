@@ -1,6 +1,7 @@
-import { useState, useRef, type FormEvent } from 'react';
+import { useState, useRef, useEffect, type FormEvent } from 'react';
 import { Sparkles, Mic, MicOff, Send, Terminal, Search, Cpu, Wrench } from 'lucide-react';
 import type { OrbState } from './ParticleBlob';
+import { useSpeechRecognition } from '../hooks/useSpeechRecognition';
 import './CommandBar.css';
 
 interface CommandBarProps {
@@ -20,27 +21,78 @@ export default function CommandBar({ onSendMessage, currentState, onStateChange 
   const [input, setInput] = useState('');
   const [isFocused, setIsFocused] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
-  const isListening = currentState === 'listening';
+  const wasListeningRef = useRef(false);
+
+  const {
+    transcript,
+    isListening,
+    startListening,
+    stopListening,
+    isSupported,
+    error,
+  } = useSpeechRecognition();
+
+  // Populate the command input with the live transcript as speech is recognized
+  useEffect(() => {
+    if (transcript) {
+      setInput(transcript);
+    }
+  }, [transcript]);
+
+  // If active speech session ends (e.g. stopped or error), revert orb state if it was set to listening
+  useEffect(() => {
+    if (wasListeningRef.current && !isListening && currentState === 'listening') {
+      onStateChange('idle');
+    }
+    wasListeningRef.current = isListening;
+  }, [isListening, currentState, onStateChange]);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!input.trim()) return;
+    if (isListening) {
+      stopListening();
+    }
     onSendMessage(input.trim());
     setInput('');
   };
 
   const handleChipClick = (chip: typeof ACTION_CHIPS[number]) => {
+    if (isListening) {
+      stopListening();
+    }
     onStateChange(chip.state);
     onSendMessage(chip.prompt);
   };
 
   const toggleMic = () => {
+    if (!isSupported) return;
+
     if (isListening) {
-      onStateChange('idle');
+      stopListening();
+      if (currentState === 'listening') {
+        onStateChange('idle');
+      }
     } else {
+      setInput('');
+      startListening();
       onStateChange('listening');
     }
   };
+
+  const micTitle = !isSupported
+    ? 'Speech recognition is not supported in this browser'
+    : error
+    ? error
+    : isListening
+    ? 'Stop Voice Input'
+    : 'Start Voice Input';
+
+  const placeholderText = isListening
+    ? 'Listening...'
+    : error
+    ? error
+    : 'Ask JARVIS anything...';
 
   return (
     <div className="command-deck">
@@ -62,7 +114,11 @@ export default function CommandBar({ onSendMessage, currentState, onStateChange 
       </div>
 
       {/* Futuristic Command Input */}
-      <form className={`command-bar-form ${isFocused ? 'focused' : ''}`} onSubmit={handleSubmit}>
+      <form
+        className={`command-bar-form ${isFocused ? 'focused' : ''}`}
+        onSubmit={handleSubmit}
+        title={error ?? undefined}
+      >
         <div className="command-bar-glow" />
 
         <div className="command-icon">
@@ -84,7 +140,7 @@ export default function CommandBar({ onSendMessage, currentState, onStateChange 
           onChange={(e) => setInput(e.target.value)}
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
-          placeholder={isListening ? "Listening..." : "Ask JARVIS anything..."}
+          placeholder={placeholderText}
         />
 
         <div className="command-actions">
@@ -92,7 +148,10 @@ export default function CommandBar({ onSendMessage, currentState, onStateChange 
             type="button"
             className={`mic-btn ${isListening ? 'listening' : ''}`}
             onClick={toggleMic}
-            title={isListening ? "Stop Voice Input" : "Start Voice Input"}
+            disabled={!isSupported}
+            style={!isSupported ? { opacity: 0.4, cursor: 'not-allowed' } : undefined}
+            title={micTitle}
+            aria-label={micTitle}
           >
             {isListening ? <MicOff size={16} /> : <Mic size={16} />}
             {isListening && <div className="mic-ring" />}
