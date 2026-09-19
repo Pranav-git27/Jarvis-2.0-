@@ -10,7 +10,7 @@ import ChatDrawer, { type ChatMessage } from './components/ChatDrawer';
 import WorkflowIndicator from './components/WorkflowIndicator';
 import ActivityPanel from './components/ActivityPanel';
 import { sendChatStream } from './services/api';
-import { playStateChange } from './services/sfx';
+import { playStateChange, playMessageSent, playMessageReceived } from './services/sfx';
 import './App.css';
 
 function App() {
@@ -42,6 +42,8 @@ function App() {
 
   const handleSendMessage = async (text: string) => {
     if (isLoading || orbState === 'thinking' || !text.trim()) return;
+
+    playMessageSent();
 
     const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     const userMsg: ChatMessage = {
@@ -93,6 +95,8 @@ function App() {
             : msg
         )
       );
+
+      playMessageReceived();
 
       setOrbState('completed');
       setTimeout(() => {

@@ -2,6 +2,7 @@ import { useState, useRef, useEffect, useCallback, type FormEvent } from 'react'
 import { Sparkles, Mic, MicOff, Send, Terminal, Search, Cpu, Wrench } from 'lucide-react';
 import type { OrbState } from './ParticleBlob';
 import { useSpeechRecognition } from '../hooks/useSpeechRecognition';
+import { playChime } from '../services/sfx';
 import './CommandBar.css';
 
 interface CommandBarProps {
@@ -43,6 +44,9 @@ export default function CommandBar({ onSendMessage, currentState, onStateChange 
   const voiceSubmittedRef = useRef(false);
   const callbackRefs = useRef({ onSendMessage, stopListening: () => {} });
 
+  // CHUNK 16 ref: tracks whether a chime was played for the active listening session.
+  const listeningChimedRef = useRef(false);
+
   const {
     transcript,
     isListening,
@@ -64,6 +68,18 @@ export default function CommandBar({ onSendMessage, currentState, onStateChange 
   useEffect(() => {
     callbackRefs.current = { onSendMessage, stopListening };
   }, [onSendMessage, stopListening]);
+
+  // CHUNK 16 — Voice listening chime SFX.
+  // Plays once when voice listening actually starts.
+  // Ignored on mount, on explicit stop, and during recognition engine restarts mid-session.
+  useEffect(() => {
+    if (isListening && !listeningChimedRef.current) {
+      listeningChimedRef.current = true;
+      playChime();
+    } else if (!isListening) {
+      listeningChimedRef.current = false;
+    }
+  }, [isListening]);
 
   const clearSilenceTimer = useCallback(() => {
     if (silenceTimerRef.current !== null) {
