@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, type FormEvent } from 'react';
+import { useState, useRef, useEffect, useCallback, type FormEvent } from 'react';
 import { Sparkles, Mic, MicOff, Send, Terminal, Search, Cpu, Wrench } from 'lucide-react';
 import type { OrbState } from './ParticleBlob';
 import { useSpeechRecognition } from '../hooks/useSpeechRecognition';
@@ -17,11 +17,31 @@ const ACTION_CHIPS = [
   { label: 'Voice', icon: Mic, state: 'listening' as OrbState, prompt: 'Initialize voice synthesis mode.' },
 ];
 
+/**
+ * CHUNK 12 — STT silence detection / auto-submit.
+ *
+ * Voice command UX: after the user stops speaking for this long, the
+ * recognized command is treated as complete and auto-submitted through the
+ * existing onSendMessage path. Chosen within the required ~1-2s window:
+ * long enough to survive natural pauses between words, short enough to
+ * feel responsive.
+ */
+const SILENCE_TIMEOUT_MS = 1500;
+
 export default function CommandBar({ onSendMessage, currentState, onStateChange }: CommandBarProps) {
   const [input, setInput] = useState('');
   const [isFocused, setIsFocused] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const wasListeningRef = useRef(false);
+
+  // CHUNK 12 refs: silence timer + latest-value mirrors to avoid stale
+  // closures inside the setTimeout callback, plus a per-session guard so a
+  // voice command can only ever be submitted once.
+  const silenceTimerRef = useRef<number | null>(null);
+  const transcriptRef = useRef('');
+  const isListeningRef = useRef(false);
+  const voiceSubmittedRef = useRef(false);
+  const callbackRefs = useRef({ onSendMessage, stopListening: () => {} });
 
   const {
     transcript,
@@ -32,12 +52,90 @@ export default function CommandBar({ onSendMessage, currentState, onStateChange 
     error,
   } = useSpeechRecognition();
 
-  // Populate the command input with the live transcript as speech is recognized
+  // Keep callback + value mirrors current without re-arming the timer effect.
   useEffect(() => {
-    if (transcript) {
-      setInput(transcript);
-    }
+    transcriptRef.current = transcript;
   }, [transcript]);
+
+  useEffect(() => {
+    isListeningRef.current = isListening;
+  }, [isListening]);
+
+  useEffect(() => {
+    callbackRefs.current = { onSendMessage, stopListening };
+  }, [onSendMessage, stopListening]);
+
+  const clearSilenceTimer = useCallback(() => {
+    if (silenceTimerRef.current !== null) {
+      window.clearTimeout(silenceTimerRef.current);
+      silenceTimerRef.current = null;
+    }
+  }, []);
+
+  // Never leave the silence timer running after unmount.
+  useEffect(() => {
+    return () => {
+      if (silenceTimerRef.current !== null) {
+        window.clearTimeout(silenceTimerRef.current);
+        silenceTimerRef.current = null;
+      }
+    };
+  }, []);
+
+  // Populate the command input with the live transcript as speech is recognized.
+  // Skipped once this voice session has been submitted/cancelled so the
+  // trailing onend transcript finalization cannot repopulate an input that
+  // was already cleared by a (manual or automatic) send.
+  useEffect(() => {
+    if (!transcript) {
+      return;
+    }
+    if (voiceSubmittedRef.current) {
+      return;
+    }
+    setInput(transcript);
+  }, [transcript]);
+
+  // CHUNK 12 — silence detection. Every confirmed speech update resets the
+  // timer; only a full SILENCE_TIMEOUT_MS with no transcript change while
+  // the logical session is still active triggers auto-submit. The timer is
+  // never armed on an empty transcript, and nothing is submitted when the
+  // engine merely restarts mid-session (isListening stays true, so the
+  // timer simply keeps waiting for real silence).
+  useEffect(() => {
+    if (!isListening) {
+      return;
+    }
+    if (!transcript.trim()) {
+      return;
+    }
+    if (voiceSubmittedRef.current) {
+      return;
+    }
+
+    clearSilenceTimer();
+    silenceTimerRef.current = window.setTimeout(() => {
+      silenceTimerRef.current = null;
+      if (voiceSubmittedRef.current) {
+        return;
+      }
+      if (!isListeningRef.current) {
+        return;
+      }
+      const finalText = transcriptRef.current.trim();
+      if (!finalText) {
+        return;
+      }
+      voiceSubmittedRef.current = true;
+      callbackRefs.current.stopListening();
+      callbackRefs.current.onSendMessage(finalText);
+      setInput('');
+    }, SILENCE_TIMEOUT_MS);
+
+    return () => {
+      clearSilenceTimer();
+    };
+  }, [transcript, isListening, clearSilenceTimer]);
 
   // If active speech session ends (e.g. stopped or error), revert orb state if it was set to listening
   useEffect(() => {
@@ -50,6 +148,10 @@ export default function CommandBar({ onSendMessage, currentState, onStateChange 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     if (!input.trim()) return;
+    // Manual send wins: cancel any pending voice auto-submit and mark this
+    // session consumed so the trailing recognition teardown cannot resubmit.
+    clearSilenceTimer();
+    voiceSubmittedRef.current = true;
     if (isListening) {
       stopListening();
     }
@@ -58,6 +160,9 @@ export default function CommandBar({ onSendMessage, currentState, onStateChange 
   };
 
   const handleChipClick = (chip: typeof ACTION_CHIPS[number]) => {
+    // Chip send wins over a pending voice auto-submit (same guard as Enter).
+    clearSilenceTimer();
+    voiceSubmittedRef.current = true;
     if (isListening) {
       stopListening();
     }
@@ -69,11 +174,17 @@ export default function CommandBar({ onSendMessage, currentState, onStateChange 
     if (!isSupported) return;
 
     if (isListening) {
+      // Intentional manual stop: cancel the silence timer and consume the
+      // session so no automatic submission follows the user's explicit stop.
+      clearSilenceTimer();
+      voiceSubmittedRef.current = true;
       stopListening();
       if (currentState === 'listening') {
         onStateChange('idle');
       }
     } else {
+      clearSilenceTimer();
+      voiceSubmittedRef.current = false;
       setInput('');
       startListening();
       onStateChange('listening');
