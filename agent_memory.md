@@ -19,7 +19,7 @@ A premium 3D interactive AI Operating System UI with particle orb, sci-fi HUD gl
 | **Styling** | Custom Sci-Fi CSS Design Tokens + CSS Variables | ✅ Done |
 | **AI** | Gemini API (Flash free tier) | ✅ Streaming Connected (Chunk 9) |
 | **TTS** | Pocket TTS (Python FastAPI backend) | 🔲 Pending |
-| **STT** | Web Speech API (browser-native) | ✅ Hook Created (Chunk 10) — UI integration pending |
+| **STT** | Web Speech API (browser-native) | ✅ Complete (Chunks 10–12) — hook, CommandBar integration, silence detection + auto-submit, browser-verified |
 
 ---
 
@@ -150,7 +150,13 @@ D:\JARVIS 2.0\
 - **Session Semantics**: Interim + final results; transcript accumulates confirmed finals plus current interim, settles to finals on end, resets per session; engine auto-restarts after recognition ends while the session remains active.
 - **Robustness**: Safe repeated start/stop, cleanup on unmount, no stale closures (refs + state setters only), user-friendly error messages for known recognition error codes.
 - **Validation**: `npm run build` (tsc -b + vite) and `npm run lint` (oxlint) both pass with zero errors.
-- **Not Yet Done**: UI integration (CommandBar mic binding, live transcript rendering, orb-state `listening` transitions, auto-submit) — planned for Chunks 11–12.
+- **UI Integration**: completed in Chunks 11–12 — see section 14 (CommandBar mic binding, live transcript rendering, orb-state `listening` transitions, 1.5 s silence detection with auto-submit through the existing chat flow; browser-verified).
+
+### 14. Voice Command Integration (`src/components/CommandBar.tsx`) — Completed Chunks 11–12
+- **Chunk 11**: Mic toggle bound to `useSpeechRecognition`; live transcript rendered into the command input; manual typing/send and unsupported-browser handling preserved.
+- **Chunk 12**: Silence detection in `CommandBar.tsx` (`SILENCE_TIMEOUT_MS = 1500`); transcript activity resets the timer; auto-submit flows through the existing `onSendMessage` path with the input cleared afterward. `useSpeechRecognition.ts` and `App.tsx` unchanged.
+- **Guards**: Empty/whitespace transcripts never submit; per-session guard blocks duplicate submissions; manual mic stop, Enter, and chip clicks consume the session so they never duplicate-submit; recognition-engine restarts do not trigger submission; timer cleaned up on re-arm, session end, and unmount.
+- **Validation**: `npm run build` and `npm run lint` pass; browser-verified (listening starts, live transcript appears, continuous speech does not prematurely submit, silence triggers a single auto-submit with streamed response, no console errors). Frontend → FastAPI → Gemini architecture unchanged.
 
 ---
 
@@ -195,6 +201,6 @@ npm run dev
 ## Next Steps
 1. Integrate Gemini API for real AI responses
 2. Build Python FastAPI backend for TTS
-3. Integrate STT hook into CommandBar & voice command flow (Chunks 11–12)
+3. STT hook CommandBar & voice command flow integration (Chunks 11–12) — Done, browser-verified
 4. Add sound effects for state transitions
 5. Implement persistent conversation history

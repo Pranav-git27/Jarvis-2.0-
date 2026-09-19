@@ -102,16 +102,20 @@ This plan outlines the architecture and step-by-step roadmap to complete all rem
 - Handles start/result/error/end events; supports interim + final results; accumulates the session transcript; safe repeated start/stop; cleanup on unmount; no stale closures.
 - No third-party packages; no backend/API/Gemini interaction. Minimal internal Web Speech API typings (project DOM typings lack them).
 - Validated: `npm run build` (tsc -b + vite) and `npm run lint` (oxlint) pass with zero errors.
-- Deferred to Chunks 11–12: silence detection, auto-submit on pause, orb-state `listening` transitions, UI integration.
+- UI integration, silence detection, and auto-submit completed in Chunks 11–12 (see below).
 
-#### [MODIFY] [PLANNED CHUNK 11] Frontend — `d:\JARVIS 2.0\jarvis-frontend\src\components\CommandBar.tsx`
+#### [MODIFY] [COMPLETED CHUNK 11] Frontend — `d:\JARVIS 2.0\jarvis-frontend\src\components\CommandBar.tsx`
 - Bind microphone toggle button to `useSpeechRecognition` hook.
 - Render live audio transcript into input bar in real time.
 
-#### [MODIFY] [PLANNED CHUNK 12] Frontend — Voice Command Flow (`src/App.tsx` + hook wiring)
-- Wire recognized voice input into the existing `handleSendMessage` flow.
-- Add speech silence detection and auto-submit on pause.
-- End-to-end browser verification of the full voice → JARVIS response loop.
+#### [MODIFY] [COMPLETED CHUNK 12] Frontend — Voice Command Flow (`src/components/CommandBar.tsx` silence detection + auto-submit)
+- Voice input is wired into the existing onSendMessage flow.
+- Silence detection is implemented in CommandBar.tsx.
+- Silence timeout is 1.5 seconds.
+- Auto-submit occurs after speech stops.
+- useSpeechRecognition.ts remains unchanged.
+- App.tsx remains unchanged.
+- Existing streaming chat flow remains unchanged.
 
 ---
 

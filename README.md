@@ -14,11 +14,11 @@ The project prioritizes clean architecture, maintainability, and production-qual
 - **Chat Drawer** — Streaming-style chat with markdown, syntax-highlighted code blocks, and one-click copy.
 - **Workflow & Activity Indicators** — Animated state-to-stage mapping and live activity display.
 - **Backend Scaffolding** — FastAPI server with CORS, root and `/health` endpoints, an `app/` package layout, and environment-based configuration loading (`GEMINI_API_KEY` from `jarvis-backend/.env`).
+- **Voice Input (STT)** — Browser-native Web Speech API transcription with live transcript, 1.5 s silence detection, and auto-submit through the existing chat flow.
 
 ### Planned
 
 - **Gemini AI Integration** — Real-time streaming chat through the backend (backend-first: `React → FastAPI → Gemini`). [Planned]
-- **Voice Input (STT)** — Browser-native Web Speech API transcription. [Planned]
 - **Text-to-Speech (TTS)** — Voice synthesis API and audio streaming. [Planned]
 - **Sci-Fi Sound Effects** — Procedural Web Audio SFX for state changes and UI interactions. [Planned]
 - **Session & History Persistence** — Local storage for transcripts and preferences. [Planned]
