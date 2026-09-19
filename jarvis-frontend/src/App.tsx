@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import ParticleBlob from './components/ParticleBlob';
 import type { OrbState } from './components/ParticleBlob';
 import BackgroundDepth from './components/BackgroundDepth';
@@ -10,6 +10,7 @@ import ChatDrawer, { type ChatMessage } from './components/ChatDrawer';
 import WorkflowIndicator from './components/WorkflowIndicator';
 import ActivityPanel from './components/ActivityPanel';
 import { sendChatStream } from './services/api';
+import { playStateChange } from './services/sfx';
 import './App.css';
 
 function App() {
@@ -24,6 +25,20 @@ function App() {
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
     },
   ]);
+
+  // Last orb state that already produced a transition sound. Initialized to
+  // the mount state so the initial render is never treated as a transition.
+  const soundedStateRef = useRef<OrbState>('idle');
+
+  // State-transition SFX only: plays once per genuine orb state change.
+  // Re-renders with an unchanged state are ignored, and the StrictMode
+  // dev double-effect on mount is a no-op (ref still equals state).
+  useEffect(() => {
+    if (soundedStateRef.current !== orbState) {
+      soundedStateRef.current = orbState;
+      playStateChange(orbState);
+    }
+  }, [orbState]);
 
   const handleSendMessage = async (text: string) => {
     if (isLoading || orbState === 'thinking' || !text.trim()) return;
